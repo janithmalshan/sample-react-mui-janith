@@ -1,0 +1,129 @@
+
+// ===== common mixing classes // ================================================================
+// -- / display
+.block { display: block; }
+.inline { display: inline; }
+.none { display: none; }
+.inline-block { display: inline-block;}
+.table-cell { display: table-cell;}
+
+// -- / floats
+.f-left { float: left !important; }
+.f-right { float: right !important; }
+.f-none { float: none !important; }
+.clr-bth { clear: both !important; }
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+// -- / position
+.absolute { position: absolute;}
+.relative { position: relative;}
+.fixed { position: fixed;}
+
+.t-left {text-align: left}
+.t-right {text-align: right}
+
+.full-width {
+	width: 100%;
+}
+
+// -- Breakpoints
+@mixin breakpoint-sm {
+	@media (max-width: #{$break-sm}) {
+		@content;
+	}
+}
+@mixin breakpoint-md {
+	@media (max-width: #{$break-md}) {
+		@content;
+	}
+}
+@mixin breakpoint-signin-h {
+	@media (min-height: 800px) {
+		@content;
+	}
+}
+@mixin breakpoint-signin-w {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin breakpoint-signin-lap {
+	@media (max-width: #{$break-lap}) {
+		@content;
+	}
+}
+@mixin breakpoint-signin-lap-2 {
+	@media (max-width: #{$break-lap-2}) {
+		@content;
+	}
+}
+@mixin breakpoint-signin-desk {
+  @media (max-width: #{$break-desk}) {
+    @content;
+  }
+}
+@mixin breakpoint-signin-tab {
+	@media (max-width: #{$break-tab}) {
+		@content;
+	}
+}
+
+//-- / Clear Default Styles
+
+// -- images
+@mixin bg-img ($img, $repeat: no-repeat, $position: left top) {
+	background-image: url(#{$img-path}#{$img});
+	background-repeat: $repeat;
+	background-position: $position;
+}
+
+// -- images
+@mixin mask-img ($maskImg, $repeat: no-repeat, $position: left top) {
+	mask: url(#{$icon-path}#{$maskImg}) $repeat $position;
+	-webkit-mask:url(#{$icon-path}#{$maskImg}) $repeat $position;
+}
+
+// -- borders
+.border-radius-none{
+    border-radius:0;
+}
+@mixin border-top ($bdr-color, $bdr-width: 1px, $bdr-type: solid){
+	border-top: $bdr-width $bdr-type $bdr-color;
+}
+@mixin border-bottom ($bdr-color, $bdr-width: 2px, $bdr-type: solid){
+	border-bottom: $bdr-width $bdr-type $bdr-color;
+}
+@mixin border-left ($bdr-color, $bdr-width: 2px, $bdr-type: solid){
+	border-left: $bdr-width $bdr-type $bdr-color;
+}
+@mixin border-right ($bdr-color, $bdr-width: 2px, $bdr-type: solid){
+	border-right: $bdr-width $bdr-type $bdr-color;
+}
+@mixin border($bdr-color, $bdr-width: 2px, $bdr-type: solid){
+	border: $bdr-width $bdr-type $bdr-color;
+}
+
+//-- / Shadow
+
+@mixin box-shadow($blur, $spread, $sh-color, $shadow-type:outset, $h-shadow:0px, $v-shadow:0px){
+	box-shadow:$h-shadow $v-shadow $blur $spread $sh-color $shadow-type;
+}
+// ===== / common mixing classes // ==============================================================
+
+@mixin ui-icon-user {
+	width: 85px;
+	height: 85px;
+	padding: 0;
+	background: #363659;
+	font-size: 24px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 85px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #f2bd49;
+	text-transform: uppercase;
+	margin-top: -6px;
+	border-radius: 50px;
+}

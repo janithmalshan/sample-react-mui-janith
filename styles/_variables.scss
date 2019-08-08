@@ -1,0 +1,182 @@
+//Prefix
+$prefix:".ideahub-symphony";
+
+//Colors
+$primary : #6764ff;
+$primary-dark : $primary;
+$accent : #f2bd49;
+$primary-alpha : rgba(62, 62, 100, 0.3);
+$default-font-color: #fff;
+$btn-bdr-color : $accent;
+$btn-txt-color : #2e2f5d;
+$btn-disable-color : #484871;
+$color-transparent : rgba(0, 0, 0, 0);
+$color-transparent-hover : rgba(0, 0, 0, 0.05);
+$signin-link-color : #9f9fcf;
+$signin-link-hover-color : #9f9fcf;
+
+//Dimensions
+$default-btn-size:10px;
+$auth-btn-size:50px;
+
+// -- borders
+//$border-white:#ffffff;
+//$nav-link-border:#343840;
+//$nav-link-active-border:#F15E5E;
+//$btn-outline:#ababab;
+//$movie-wrapper:#D3D3D3;
+//$modal-input:#979797;
+//$border-black:#000;
+//$table-td-border: #a0a0a0;
+//$auto-suggest-border:#dddddd;
+
+// -- background colors
+$default-bg : #27274c;
+$header-bg : $primary-dark;
+
+// -- fonts
+$lato-light: "/styles/fonts/Lato-Light";
+$lato-Black: "/styles/fonts/Lato-Black";
+$lato-Hairline: "/styles/fonts/Lato-Hairline";
+$lato-Bold: "/styles/fonts/Lato-Bold";
+$lato-HairlineItalic: "/styles/fonts/Lato-HairlineItalic";
+$lato-LightItalic: "/styles/fonts/Lato-LightItalic";
+$lato-BlackItalic: "/styles/fonts/Lato-BlackItalic";
+$lato-BoldItalic: "/styles/fonts/Lato-BoldItalic";
+$lato-Italic: "/styles/fonts/Lato-Italic";
+$lato-Regular: "/styles/fonts/Lato-Regular";
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-light}.eot');
+	src: url('#{$lato-light}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-light}.woff') format('woff'),
+		url('#{$lato-light}.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-Black}.eot');
+	src: url('#{$lato-Black}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-Black}.woff') format('woff'),
+		url('#{$lato-Black}.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato Hairline';
+	src: url('#{$lato-Hairline}.eot');
+	src: url('#{$lato-Hairline}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-Hairline}.woff') format('woff'),
+		url('#{$lato-Hairline}.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-Bold}.eot');
+	src: url('#{$lato-Bold}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-Bold}.woff') format('woff'),
+		url('#{$lato-Bold}.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato Hairline';
+	src: url('#{$lato-HairlineItalic}.eot');
+	src: url('#{$lato-HairlineItalic}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-HairlineItalic}.woff') format('woff'),
+		url('#{$lato-HairlineItalic}.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-LightItalic}.eot');
+	src: url('#{$lato-LightItalic}?#iefix') format('embedded-opentype'),
+		url('#{$lato-LightItalic}.woff') format('woff'),
+		url('#{$lato-LightItalic}.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-BlackItalic}.eot');
+	src: url('#{$lato-BlackItalic}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-BlackItalic}.woff') format('woff'),
+		url('#{$lato-BlackItalic}.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-BoldItalic}.eot');
+	src: url('#{$lato-BoldItalic}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-BoldItalic}.woff') format('woff'),
+		url('#{$lato-BoldItalic}.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-Italic}.eot');
+	src: url('#{$lato-Italic}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-Italic}.woff') format('woff'),
+		url('#{$lato-Italic}.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('#{$lato-Regular}.eot');
+	src: url('#{$lato-Regular}.eot?#iefix') format('embedded-opentype'),
+		url('#{$lato-Regular}.woff') format('woff'),
+		url('#{$lato-Regular}.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$primary-font-regular: Lato, Arial;
+$primary-font-Hairline: Lato Hairline, Arial;
+// -- / fonts
+
+// -- images
+$img-path: "/styles/images/";
+$icon-path: "/styles/images/icons/";
+
+$service-icons:(1: 90px, 2: 91px, 3: 100px, 4: 90px);
+$alerts:(
+	info: "success.svg", 
+	warning: "", 
+	error: "",
+	bg:(
+		info-bg: #2E72AD, 
+		warning-bg: #ff0000, 
+		error-bg: #ff0000,
+	)
+);
+
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+	}
+    @return $map;
+}
+
+// Responsive
+$break-sm: 599px;
+$break-md: 950px;
+$break-tab: 768px;
+$break-desk: 1024px;
+$break-lap: 1366px;
+$break-lap-2: 1280px;
