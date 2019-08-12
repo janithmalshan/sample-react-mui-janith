@@ -8,11 +8,49 @@
     margin: 0 auto;
     height: $main-footer;
     overflow: hidden;
+    a:hover {
+      color: #636c80;
+      cursor: pointer;
+    }
+    &-left {
+      height: auto;
+      padding-top: 25px;
+      p,a {
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 20px;
+        letter-spacing: normal;
+        color: #8c95a8;
+        margin: 0;
+        display: inline-block;
+      }
+    }
+    &-right {
+      height: auto;
+      width: 100%;
+      padding-top: 25px;
+      text-align: right;
+      a {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 20px;
+        letter-spacing: -0.18px;
+        color: #8c95a8;
+        margin: 0;
+        padding: 0 9px;
+        display: inline-block;
+      }
+    }
   }
   &-logo {
     height: 22px;
     padding: 21px 17px 29px 18px;
     box-sizing: content-box;
+    vertical-align: middle;
     @extend .inline-block;
   }
 }
