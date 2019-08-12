@@ -5,7 +5,6 @@
 .inline { display: inline; }
 .none { display: none; }
 .inline-block { display: inline-block;}
-.table-cell { display: table-cell;}
 
 // -- / floats
 .f-left { float: left !important; }
@@ -18,13 +17,11 @@
 .absolute { position: absolute;}
 .relative { position: relative;}
 .fixed { position: fixed;}
+.overflow { overflow: auto;}
 
 .t-left {text-align: left}
 .t-right {text-align: right}
-
-.full-width {
-	width: 100%;
-}
+.t-bold {font-weight: 600;}
 
 // -- Breakpoints
 @mixin breakpoint-sm {

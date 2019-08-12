@@ -22,11 +22,11 @@ class PackageModules extends Component {
     render() { 
         return ( 
 
-            <ul>
+            <span>
                 {this.props.modules.data.map((module, index) =>
                     <UiModule module={module} key={module.id}/>
                 )}
-            </ul>
+            </span>
         );
     }
 }

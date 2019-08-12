@@ -11,8 +11,36 @@ const ButtonDefault = styled(Button)({
     padding: '0 30px',
 });
 const ButtonAuth = styled(Button)({
-    fontSize: '10px',
-    height: 48,
+    fontSize: '16px',
+    height: 50,
+    borderRadius: '4px',
+    margin: '8px 0',
+    lineHeight: '19px',
+    textTransform: 'unset',
+    padding: '14px 16px 17px',
+    fontFamily: [
+        'Gelion',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+    ].join(','),
+    borderWidth: '2px',
+    '&:hover': {
+        borderWidth: '2px',
+    },
+    '&:active': {
+        borderWidth: '2px',
+    },
+    '&:focus': {
+        borderWidth: '2px',
+    },
 });
 
 export {ButtonDefault};

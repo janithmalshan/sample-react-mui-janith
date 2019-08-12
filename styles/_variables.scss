@@ -3,21 +3,22 @@ $prefix:".ideahub-symphony";
 
 //Colors
 $primary : #6764ff;
-$primary-dark : $primary;
-$accent : #f2bd49;
-$primary-alpha : rgba(62, 62, 100, 0.3);
-$default-font-color: #fff;
-$btn-bdr-color : $accent;
-$btn-txt-color : #2e2f5d;
-$btn-disable-color : #484871;
-$color-transparent : rgba(0, 0, 0, 0);
-$color-transparent-hover : rgba(0, 0, 0, 0.05);
-$signin-link-color : #9f9fcf;
-$signin-link-hover-color : #9f9fcf;
+//$primary-dark : $primary;
+//$accent : #f2bd49;
+//$primary-alpha : rgba(62, 62, 100, 0.3);
+$default-bg-color: #fafcfe;
+//$color-transparent : rgba(0, 0, 0, 0);
+//$color-transparent-hover : rgba(0, 0, 0, 0.05);
+$main-menu-bg : $default-bg-color;
 
 //Dimensions
 $default-btn-size:10px;
 $auth-btn-size:50px;
+$main-nav:70px;
+$main-footer:72px;
+$menu-max-width:1246px;
+$main-content-min-height: calc(100vh - #{$main-nav + $main-footer });
+$menu-height: $main-content-min-height;
 
 // -- borders
 //$border-white:#ffffff;
@@ -29,10 +30,6 @@ $auth-btn-size:50px;
 //$border-black:#000;
 //$table-td-border: #a0a0a0;
 //$auto-suggest-border:#dddddd;
-
-// -- background colors
-$default-bg : #27274c;
-$header-bg : $primary-dark;
 
 // -- fonts
 $lato-light: "/styles/fonts/Lato-Light";

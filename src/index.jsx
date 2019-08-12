@@ -1,15 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
+import {render} from 'react-dom';
+import {Provider} from 'react-redux';
 
-import { store } from './_helpers';
-import { App } from './App';
+import {store} from './_helpers';
+import {App} from './App';
 
 import '../styles/styles.scss';
 
 render(
     <Provider store={store}>
-        <App />
+        <App/>
     </Provider>,
     document.getElementById('app')
 );

@@ -13,11 +13,11 @@ class HomePage extends React.Component {
         const { user, packages } = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
-                    <ul>
+                    <span>
                         {packages.data.map((pack, index) =>
                             <UiPackage pack={pack} key={pack.id}/>
                         )}
-                    </ul>
+                    </span>
                 
                 <p>
                     <Link to="/login">Logout</Link>

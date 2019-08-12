@@ -9,21 +9,25 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function UiMainWrap() {
+export const UiMainWrap = (props) => {
     const classes = useStyles();
 
     return (
-        <Grid
-            component="main"
-            container
-            spacing={0}
-            direction="column"
-            align="center"
-            justify="center"
-            className={classes.root}>
+        <div className="ui-main-wr">
 
-            <h1>ejfdksdd</h1>
+            {/*<Grid
+                component="main"
+                container
+                spacing={0}
+                direction="column"
+                align="center"
+                justify="center"
+                className={classes.root}>
 
-        </Grid>
+                <h1>Title</h1>
+                <div {...props}/>
+
+            </Grid>*/}
+        </div>
     );
 }

@@ -1,0 +1,18 @@
+.ui-footer{
+  height: $main-footer;
+  //box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+  background-color: rgba(255, 255, 255, 0);
+  &-inner {
+    width: 100%;
+    max-width: $menu-max-width;
+    margin: 0 auto;
+    height: $main-footer;
+    overflow: hidden;
+  }
+  &-logo {
+    height: 22px;
+    padding: 21px 17px 29px 18px;
+    box-sizing: content-box;
+    @extend .inline-block;
+  }
+}

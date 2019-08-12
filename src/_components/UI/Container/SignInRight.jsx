@@ -8,9 +8,11 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import {ButtonAuth} from "../../UI/OverrideMui/ButtonTypes";
 import Link from "@material-ui/core/Link";
+import {UiAlertContentWrapper} from "../Common/UiAlert";
+import Snackbar from "@material-ui/core/Snackbar";
 
 const useStyles = makeStyles(theme => ({
-    paper: {
+/*    paper: {
         margin: theme.spacing(8, 4),
         display: 'flex',
         flexDirection: 'column',
@@ -20,77 +22,69 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
         backgroundColor: theme.palette.secondary.main,
     },
-    form: {
-        width: '100%', // Fix IE 11 issue.
-        marginTop: theme.spacing(1),
-    },
     submit: {
         margin: theme.spacing(3, 0, 2),
-    },
+    },*/
 }));
 
 export default function SignInLeft() {
     const classes = useStyles();
 
     return (
-        <div className={classes.paper}>
-            <Typography component="h1" variant="h5">
-                Login
-            </Typography>
-            <form className={classes.form} noValidate>
-                <InputAuth
-                    variant="outlined"
-                    margin="normal"
-                    required
-                    fullWidth
-                    id="email"
-                    label="Email Address"
-                    name="email"
-                    autoComplete="email"
-                    autoFocus
-                />
-                <InputAuth
-                    variant="outlined"
-                    margin="normal"
-                    required
-                    fullWidth
-                    name="password"
-                    label="Password"
-                    type="password"
-                    id="password"
-                    autoComplete="current-password"
-                />
-                <FormControlLabel
+        <Grid
+            container
+            spacing={0}
+            direction="column"
+            justify="center"
+            className="overflow"
+        >
+            <Grid className="ui-auth-main-right">
+                <h1 className="header-txt">
+                    Login
+                </h1>
+                <form className="clearfix" noValidate>
+                    <InputAuth
+                        id="email"
+                        label="Email Address"
+                        name="email"
+                        autoComplete=""
+                    />
+                    <InputAuth
+                        name="password"
+                        label="Password"
+                        type="password"
+                        id="password"
+                        error={false}
+                        // helperText="Invalid password"
+                    />
+                    {/*<FormControlLabel
                     control={<Checkbox value="remember" color="primary"/>}
                     label="Remember me"
-                />
-                <ButtonAuth
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    color="primary"
-                >
-                    Login
-                </ButtonAuth>
-                {/*<ButtonDefault>4551145</ButtonDefault>*/}
-                {/*<ButtonAuth variant="outlined" color="primary" className={classes.button}>1RFD1145</ButtonAuth>*/}
-                <Grid container>
-                    <Grid item xs>
-                        <Link href="#" variant="body2">
-                            Having trouble logging in?
-                        </Link>
-                    </Grid>
-                </Grid>
-                <br/>
-                <ButtonAuth
-                    type="submit"
-                    fullWidth
-                    variant="outlined"
-                    color="primary"
-                >
-                    New to Admin? <b>&nbsp; Sign Up Here</b>
-                </ButtonAuth>
-            </form>
-        </div>
+                />*/}
+                    <a href="#" className="pw-reset f-right">
+                        Having trouble logging in?
+                    </a>
+                    <ButtonAuth
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        color="primary"
+                    >
+                        <span className="t-bold">Login</span>
+                    </ButtonAuth>
+
+                    <p className="txt-or">or</p>
+
+                    <ButtonAuth
+                        type="submit"
+                        fullWidth
+                        variant="outlined"
+                        color="primary"
+                    >
+                        New to Admin? <span className="t-bold">&nbsp; Sign Up Here</span>
+                    </ButtonAuth>
+                </form>
+            </Grid>
+        </Grid>
     );
 }

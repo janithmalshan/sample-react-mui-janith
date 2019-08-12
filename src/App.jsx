@@ -3,15 +3,15 @@ import {Route, Router} from 'react-router-dom';
 import {connect} from 'react-redux';
 import UiPage from "./_components/UI/index";
 import SignInSide from './_components/UI/Pages/SignIn';
-import Dashboard from './_components/UI/Pages/Dashboard';
+import Dashboard from './_components/UI/Pages/Landing';
 
 import {history} from './_helpers';
 import {alertActions} from './_actions';
 import {PrivateRoute} from './_components';
-import {HomePage, LoginPage, PackageModulesLink, RegisterPage} from './_containers';
+import {HomePage, PackageModulesLink, RegisterPage} from './_containers';
 
 import {ThemeProvider} from '@material-ui/styles';
-import {ThemeDefault, ThemeDefaultAuth} from './_components/muicustomized/ThemeOverride';
+import {ThemeDefault, ThemeDefaultAuth} from './_components/UI/OverrideMui/ThemeOverride';
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 class App extends React.Component {
@@ -35,13 +35,14 @@ class App extends React.Component {
                 <Router history={history}>
                     <div>
 
-                        <Route exact path="/" component={HomePage}/>
+                        <PrivateRoute exact path="/" component={HomePage}/>
+                        <Route path="/:package" component={PackageModulesLink}/>
                         <Route path="/ui" component={UiPage}/>
                         <Route path="/dashboard" component={Dashboard}/>
 
                         <ThemeProvider theme={ThemeDefaultAuth}>
-
-                            <Route path="/login" render={()=> <LoginPage />}/>
+                            {/*Pages before the login should be inside here*/}
+                            <Route path="/login" component={SignInSide}/>
                             <Route path="/register" component={RegisterPage}/>
                         </ThemeProvider>
                     </div>

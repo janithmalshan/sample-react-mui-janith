@@ -1,12 +1,72 @@
-.test {
+.testInput {
   color: palegreen;
   font-size: 20px;
 }
 
-.temp {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: block;
-  background-color: #f2bd49;
+.ui-auth-main {
+  height: 100vh;
+  &-left {
+    max-width: 370px;
+    text-align: left;
+    margin: 0 32px;
+  }
+  &-right {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 16px 50px;
+    box-sizing: content-box;
+    .header-txt{
+      font-size: 30px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.38px;
+      color: #404553;
+      margin: 10px auto 55px;
+      padding: 0;
+    }
+    .pw-reset{
+      height: 21px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 21px;
+      letter-spacing: normal;
+      text-align: right;
+      color: #6764ff;
+      padding: 16px 0;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+        color: #303f9f;
+      }
+    }
+    .txt-or {
+      width: 13px;
+      height: 21px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: center;
+      margin: 14px auto;
+      color: #404553;
+      &::before,
+      &::after {
+        display: inline-block;
+        content: "";
+        border-top: 2px solid #ced7e0;
+        width: 74px;
+        margin: 0 -104px;
+        transform: translateY(-3px);
+      }
+    }
+  }
 }

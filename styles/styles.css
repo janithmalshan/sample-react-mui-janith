@@ -68,11 +68,8 @@
 .none {
   display: none; }
 
-.inline-block {
+.inline-block, .ui-footer-logo {
   display: inline-block; }
-
-.table-cell {
-  display: table-cell; }
 
 .f-left {
   float: left !important; }
@@ -108,14 +105,17 @@
 .fixed {
   position: fixed; }
 
+.overflow {
+  overflow: auto; }
+
 .t-left {
   text-align: left; }
 
 .t-right {
   text-align: right; }
 
-.full-width {
-  width: 100%; }
+.t-bold {
+  font-weight: 600; }
 
 .border-radius-none {
   border-radius: 0; }
@@ -173,16 +173,149 @@
   font-size: 17px !important;
   color: #ffffff !important;
 }*/
-.test {
+.ui-footer {
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0); }
+  .ui-footer-inner {
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+    height: 72px;
+    overflow: hidden; }
+  .ui-footer-logo {
+    height: 22px;
+    padding: 21px 17px 29px 18px;
+    box-sizing: content-box; }
+
+.ui-main-nav-bar {
+  top: 70px;
+  display: block;
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 0 40px 0  16px;
+  box-sizing: border-box;
+  background-color: #6764ff; }
+  .ui-main-nav-bar-right {
+    height: 70px; }
+    .ui-main-nav-bar-right .user-name {
+      line-height: 19px;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 25px 10px 26px;
+      margin: 0; }
+  .ui-main-nav-bar .nav-menu-btn {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .ui-main-nav-bar .nav-logo {
+    height: 25px;
+    width: auto;
+    display: inline-block;
+    margin: 18px 30px 27px 5px;
+    vertical-align: middle; }
+.ui-main-nav-menu-wr {
+  background-color: #fafcfe;
+  height: calc(100vh - 142px);
+  overflow: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+  .ui-main-nav-menu-wr .nav-menu-txt {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 54px;
+    letter-spacing: -0.38px;
+    color: #404553;
+    margin: 30px auto 12px;
+    padding: 0 18px;
+    max-width: 1246px; }
+  .ui-main-nav-menu-wr .nav-menu {
+    overflow: auto;
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto; }
+
+.testInput {
   color: palegreen;
   font-size: 20px; }
 
-.temp {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: block;
-  background-color: #f2bd49; }
+.ui-auth-main {
+  height: 100vh; }
+  .ui-auth-main-left {
+    max-width: 370px;
+    text-align: left;
+    margin: 0 32px; }
+  .ui-auth-main-right {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 16px 50px;
+    box-sizing: content-box; }
+    .ui-auth-main-right .header-txt {
+      font-size: 30px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.38px;
+      color: #404553;
+      margin: 10px auto 55px;
+      padding: 0; }
+    .ui-auth-main-right .pw-reset {
+      height: 21px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 21px;
+      letter-spacing: normal;
+      text-align: right;
+      color: #6764ff;
+      padding: 16px 0;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none; }
+      .ui-auth-main-right .pw-reset:hover {
+        text-decoration: underline;
+        color: #303f9f; }
+    .ui-auth-main-right .txt-or {
+      width: 13px;
+      height: 21px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: center;
+      margin: 14px auto;
+      color: #404553; }
+      .ui-auth-main-right .txt-or::before, .ui-auth-main-right .txt-or::after {
+        display: inline-block;
+        content: "";
+        border-top: 2px solid #ced7e0;
+        width: 74px;
+        margin: 0 -104px;
+        transform: translateY(-3px); }
+
+.ui-main-wr {
+  min-height: calc(100vh - 142px); }
+
+form {
+  width: 100%; }
 
 body {
   padding: 0 !important; }
