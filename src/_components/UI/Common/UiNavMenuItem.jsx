@@ -16,7 +16,10 @@ const useStyles = makeStyles({
         boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
         backgroundColor: '#ffffff',
         margin: 18,
-        display: 'inline-block'
+        display: 'inline-block',
+        '&:hover': {
+            border: 'solid 1px #6764ff',
+        },
     },
     navTileContent: {
         paddingTop: 25,

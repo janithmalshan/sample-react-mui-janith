@@ -69,10 +69,10 @@ const ThemeDefault = createMuiTheme({
         ].join(','),
         // fontFamily: ""Gelion", "Helvetica", "Arial", sans-serif",
         fontSize: 14,
-        fontWeightLight: 300,
-        fontWeightRegular: 400,
-        fontWeightMedium: 500,
-        fontWeightBold: 700,
+        // fontWeightLight: 300,
+        // fontWeightRegular: 400,
+        // fontWeightMedium: 500,
+        // fontWeightBold: 700,
     },
     overrides: {
         // Style sheet name ⚛️

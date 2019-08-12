@@ -9,7 +9,7 @@ export default function Dashboard() {
 
     return (
         <div>
-            <UiNavBar userName="Admin">
+            <UiNavBar username="Admin">
                 {/*<h1>NAVIGATION</h1>*/}
                 <UiNavMenuItem
                     iconUrl={<InstrumentIcon/>}

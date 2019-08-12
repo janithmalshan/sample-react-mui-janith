@@ -13,7 +13,7 @@ export const UiNavBar = (props) => {
     return (
         <div>
 
-            <UiNavBarMenu {...props}/>
+            <UiNavBarMenu {...props} username={props.username}/>
 
         </div>
     );
@@ -60,7 +60,7 @@ export const UiNavBarMenu = (props) => {
                 {fullList('top')}
             </SwipeableDrawer>
             <img src="../../../../styles/img/app_logo_light.svg" className="nav-logo"/>
-            <UiNavUser userName={props.userName}/>
+            <UiNavUser username={props.username}/>
         </div>
     );
 };
@@ -77,7 +77,7 @@ const UiNavBarHeader = (props) => {
 const UiNavUser = (props) => {
     return (
         <div className="ui-main-nav-bar-right f-right">
-            <p className="user-name">{props.userName}</p>
+            <p className="user-name">{props.username}</p>
 
             <Fab size="small" color="secondary">
                 <IconLock/>
