@@ -3,6 +3,7 @@ $prefix:".ideahub-symphony";
 
 //Colors
 $primary : #6764ff;
+$secondary : #8482ff;
 //$primary-dark : $primary;
 //$accent : #f2bd49;
 //$primary-alpha : rgba(62, 62, 100, 0.3);
@@ -10,6 +11,12 @@ $default-bg-color: #fafcfe;
 //$color-transparent : rgba(0, 0, 0, 0);
 //$color-transparent-hover : rgba(0, 0, 0, 0.05);
 $main-menu-bg : $default-bg-color;
+
+// the :export directive is the magic sauce for webpack
+:export {
+  primaryColor: $primary;
+  secondaryColor: $secondary;
+};
 
 //Dimensions
 $default-btn-size:10px;
@@ -19,17 +26,6 @@ $main-footer:72px;
 $menu-max-width:1246px;
 $main-content-min-height: calc(100vh - #{$main-nav + $main-footer });
 $menu-height: $main-content-min-height;
-
-// -- borders
-//$border-white:#ffffff;
-//$nav-link-border:#343840;
-//$nav-link-active-border:#F15E5E;
-//$btn-outline:#ababab;
-//$movie-wrapper:#D3D3D3;
-//$modal-input:#979797;
-//$border-black:#000;
-//$table-td-border: #a0a0a0;
-//$auto-suggest-border:#dddddd;
 
 // -- fonts
 $lato-light: "/styles/fonts/Lato-Light";

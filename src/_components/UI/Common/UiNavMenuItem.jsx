@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Icon from "@material-ui/core/Icon";
+import variables from '../../../../styles/_variables.scss';
 
 const useStyles = makeStyles({
     navTile: {
@@ -18,7 +19,9 @@ const useStyles = makeStyles({
         margin: 18,
         display: 'inline-block',
         '&:hover': {
-            border: 'solid 1px #6764ff',
+            border: 'solid 1px',
+            borderColor: variables.primaryColor,
+            boxShadow: '0 3px 8px 0 rgba(103, 100, 255, 0.28)',
         },
     },
     navTileContent: {
@@ -71,4 +74,4 @@ export const UiNavMenuItem = (props) => {
             </CardActionArea>
         </Card>
     );
-}
+};

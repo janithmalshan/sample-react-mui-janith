@@ -2,6 +2,7 @@ import React from 'react';
 import {createMuiTheme} from '@material-ui/core/styles';
 import GelionRegular from '../../../../styles/font/gelion-regular.woff2';
 import GelionBold from '../../../../styles/font/gelion-bold.woff2';
+import variables from '../../../../styles/_variables.scss';
 
 const gelion = {
     fontFamily: 'Gelion',
@@ -30,13 +31,13 @@ const ThemeDefault = createMuiTheme({
     palette: {
         primary: {
             //light: '#00eedd',// light: will be calculated from palette.primary.main,
-            main: '#6764ff',
+            main: variables.primaryColor,
             //dark: '#44ff00',// dark: will be calculated from palette.primary.main,
             //contrastText: '#ff4400',// contrastText: will be calculated to contrast with palette.primary.main
         },
         secondary: {
             // light: palette.secondary.A200,
-            main: "#8482ff"
+            main: variables.primaryColor,
             // dark: palette.secondary.A700,
             // contrastText: getContrastText(palette.secondary.A400),
         },
