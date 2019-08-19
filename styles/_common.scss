@@ -1,6 +1,37 @@
 .ui-main-wr {
   min-height: $main-content-min-height;
+  width: auto;
+  &-inner {
+    width: 100%;
+    max-width: $main-content-max-width;
+    margin: auto;
+    padding: 32px 18px;
+    box-sizing: border-box;
+    .ui-title-wr {
+      padding: 6px 0 8px;
+    }
+    .ui-action-wr {
+      padding: 6px 0 8px;
+    }
+  }
+  .ui-title {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: -0.38px;
+    color: #404553;
+    padding: 0;
+    margin: 0;
+  }
+  .ui-table {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px #eef0f2;
+    width: 100%;
+    margin-top: 30px;
+    //overflow-x: auto;
+
+  }
 }
-form {
-  width: 100%; //IE fix
-}
+

@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import UiPage from "./_components/UI/index";
 import SignInSide from './_components/UI/Pages/SignIn';
 import Dashboard from './_components/UI/Pages/Landing';
+import Datagrid from './_components/UI/Pages/DataGrid';
 
 import {history} from './_helpers';
 import {alertActions} from './_actions';
@@ -39,6 +40,7 @@ class App extends React.Component {
                         <Route path="/:package" component={PackageModulesLink}/>
                         <Route path="/ui" component={UiPage}/>
                         <Route path="/dashboard" component={Dashboard}/>
+                        <Route path="/datagrid" component={Datagrid}/>
 
                         <ThemeProvider theme={ThemeDefaultAuth}>
                             {/*Pages before the login should be inside here*/}

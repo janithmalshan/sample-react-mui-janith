@@ -14,6 +14,7 @@ export const UiMainWrap = (props) => {
 
     return (
         <div className="ui-main-wr">
+            <div className="ui-main-wr-inner" {...props}></div>
 
             {/*<Grid
                 component="main"
@@ -25,7 +26,7 @@ export const UiMainWrap = (props) => {
                 className={classes.root}>
 
                 <h1>Title</h1>
-                <div {...props}/>
+                <div/>
 
             </Grid>*/}
         </div>

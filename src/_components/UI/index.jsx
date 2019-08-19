@@ -28,6 +28,7 @@ export default function SignInSide() {
                 <h2><a href={"/login"}>login</a></h2>
                 <h2><a href={"/register"}>register</a></h2>
                 <h2><a href={"/dashboard"}>dashboard</a></h2>
+                <h2><a href={"/datagrid"}>datagrid</a></h2>
             </Grid>
             <ButtonAuth
                 fullWidth

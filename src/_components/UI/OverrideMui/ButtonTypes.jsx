@@ -3,12 +3,14 @@ import {styled} from '@material-ui/styles';
 import Button from '@material-ui/core/Button';
 
 const ButtonDefault = styled(Button)({
-    border: 0,
-    borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    fontSize: '14px',
+    height: 40,
+    borderRadius: '4px',
     color: 'white',
-    height: 48,
+    boxShadow: 'unset',
     padding: '0 30px',
+    textTransform: 'unset',
+    fontWeight: 'bold'
 });
 const ButtonAuth = styled(Button)({
     fontSize: '16px',

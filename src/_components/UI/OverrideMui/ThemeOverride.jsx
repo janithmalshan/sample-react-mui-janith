@@ -104,6 +104,63 @@ const ThemeDefault = createMuiTheme({
                 boxShadow: '0 2px 3px 0 rgba(0, 0, 0, 0.17)'
             }
         },
+        MuiTableHead: {
+            root: {
+                // backgroundColor: "aqua"
+            }
+        },
+        MuiTableFooter: {
+            root: {
+                backgroundColor: "aqua",
+            }
+        },
+        MuiTableCell: {
+            root: {
+                fontSize: '14px',
+                lineHeight: '14px',
+                color: '#404553',
+                paddingTop: '0',
+                paddingBottom: '0',
+                backgroundColor: '#ffffff'
+            },
+            head: {
+                borderColor: "#eef0f2",
+                color: '#8c95a8',
+                fontSize: '12px',
+                lineHeight: '28px',
+                paddingTop: '0',
+                paddingBottom: '0',
+            },
+            body: {
+                maxWidth: '200px',
+                height: '49px',
+                paddingTop: '7px',
+                paddingBottom: '7px',
+                color: '#404553',
+                borderColor: "#eef0f2",
+                fontSize: '14px',
+                lineHeight: '15px',
+            },
+            footer: {
+                borderColor: "#eef0f2",
+                color: '#00ff00'
+            },
+        },
+        MuiTablePagination: {
+            toolbar: {
+                minHeight: '30px',
+                color: '#8c95a8',
+                height: '36px'
+            },
+            actions: {
+            //
+            }
+        },
+        MuiCheckbox: {
+            root: {
+                padding: '5px',
+            }
+        }
     },
 });
 const ThemeDefaultAuth = createMuiTheme({
