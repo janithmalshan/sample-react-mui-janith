@@ -1,5 +1,4 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -7,14 +6,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from "@material-ui/core/Checkbox/Checkbox";
-import TablePagination from "@material-ui/core/TablePagination/TablePagination";
-import TableFooter from "@material-ui/core/TableFooter/TableFooter";
-
-const useStyles = makeStyles(theme => ({
-    root: {
-        width: '100%',
-    },
-}));
+import TablePagination from "@material-ui/core/TablePagination";
+import TableFooter from "@material-ui/core/TableFooter";
 
 function createData(name, calories, fat, carbs, protein) {
     return {name, calories, fat, carbs, protein};
@@ -29,7 +22,6 @@ const rows = [
 ];
 
 export default function SimpleTable() {
-    const classes = useStyles();
 
     function handleChangePage(event, newPage) {
         // setPage(newPage);
@@ -41,7 +33,7 @@ export default function SimpleTable() {
     }
 
     return (
-        <div className={classes.root}>
+        <div>
             <Paper className="ui-table">
                 <Table>
                     <TableHead>
@@ -88,7 +80,7 @@ export default function SimpleTable() {
                                 rowsPerPage={10}
                                 page={0}
                                 SelectProps={{
-                                    inputProps: { 'aria-label': 'rows per page' },
+                                    inputProps: {'aria-label': 'rows per page'},
                                     native: true,
                                 }}
                                 onChangePage={handleChangePage}

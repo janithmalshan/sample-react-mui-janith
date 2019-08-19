@@ -6,7 +6,6 @@ const ButtonDefault = styled(Button)({
     fontSize: '14px',
     height: 40,
     borderRadius: '4px',
-    color: 'white',
     boxShadow: 'unset',
     padding: '0 30px',
     textTransform: 'unset',

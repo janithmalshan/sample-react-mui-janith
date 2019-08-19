@@ -1,6 +1,8 @@
 import React from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import {styled} from "@material-ui/styles";
+import Button from "@material-ui/core/Button";
 // import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const useStyles = makeStyles({
@@ -50,8 +52,7 @@ const useStyles = makeStyles({
     },
 });
 
-// export {InputDefault};
-export const InputAuth = (props) => {
+const InputAuth = (props) => {
 
     const classes = useStyles();
     return (
@@ -91,24 +92,15 @@ export const InputAuth = (props) => {
     );
 };
 
-/*const InputAuth = withStyles({
-    root: {
-        '& label.Mui-focused': {
-            color: 'green',
-        },
-        '& .MuiInput-underline:after': {
-            borderBottomColor: 'green',
-        },
-        '& .MuiOutlinedInput-root': {
-            '& fieldset': {
-                borderColor: 'red',
-            },
-            '&:hover fieldset': {
-                borderColor: 'yellow',
-            },
-            '&.Mui-focused fieldset': {
-                borderColor: 'green',
-            },
-        },
-    },
-})(TextField);*/
+const InputDefault = styled(TextField)({
+    fontSize: '14px',
+    height: 40,
+    borderRadius: '4px',
+    boxShadow: 'unset',
+    padding: '0 30px',
+    textTransform: 'unset',
+    fontWeight: 'bold'
+});
+
+export {InputDefault};
+export {InputAuth}

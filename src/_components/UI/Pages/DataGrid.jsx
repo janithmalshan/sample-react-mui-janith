@@ -4,10 +4,10 @@ import {UiFooter} from "../Common/UiFooter";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
 import {InstrumentIcon} from "../Common/SvgIcons";
 import {UiMainWrap} from "../Common/UiMainWrap";
-import {ButtonAuth, ButtonDefault} from "../OverrideMui/ButtonTypes";
-import UiTableGrid from "../Common/UiTableGrid";
+import {ButtonDefault} from "../OverrideMui/ButtonTypes";
+import UiTableGrid from "../Container/TableGrid";
 
-export default function Datagrid() {
+export default function DataGrid() {
 
     return (
         <div>
@@ -26,6 +26,17 @@ export default function Datagrid() {
                         color="primary"
                         className="f-right">Add New</ButtonDefault>
                 </div>
+                {/*<div className="ui-action-wr clearfix">
+                    <InputDefault className="ui-title f-left"/>
+                    <ButtonDefault
+                        variant="outlined"
+                        color="primary"
+                        className="f-right">Delete</ButtonDefault>
+                    <ButtonDefault
+                        variant="outlined"
+                        color="primary"
+                        className="f-right">Delete</ButtonDefault>
+                </div>*/}
                 <UiTableGrid/>
             </UiMainWrap>
             <UiFooter/>
