@@ -2,10 +2,11 @@ import React from "react";
 import {UiNavBar} from "../Common/UiNavBar";
 import {UiFooter} from "../Common/UiFooter";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
-import {InstrumentIcon} from "../Common/SvgIcons";
+import {BtnIconAdd, InstrumentIcon} from "../Common/SvgIcons";
 import {UiMainWrap} from "../Common/UiMainWrap";
-import {ButtonDefault} from "../OverrideMui/ButtonTypes";
+import {ButtonDefault, ButtonDelete, ButtonSelect} from "../OverrideMui/ButtonTypes";
 import UiTableGrid from "../Container/TableGrid";
+import {InputDefault} from "../OverrideMui/InputTypes";
 
 export default function DataGrid() {
 
@@ -24,19 +25,13 @@ export default function DataGrid() {
                     <ButtonDefault
                         variant="contained"
                         color="primary"
-                        className="f-right">Add New</ButtonDefault>
+                        className="f-right"><BtnIconAdd className="ui-btn-icon"/>Add New</ButtonDefault>
                 </div>
-                {/*<div className="ui-action-wr clearfix">
+                <div className="ui-action-wr clearfix">
                     <InputDefault className="ui-title f-left"/>
-                    <ButtonDefault
-                        variant="outlined"
-                        color="primary"
-                        className="f-right">Delete</ButtonDefault>
-                    <ButtonDefault
-                        variant="outlined"
-                        color="primary"
-                        className="f-right">Delete</ButtonDefault>
-                </div>*/}
+                    <ButtonSelect className="f-right ui-btn-sm">Select</ButtonSelect>
+                    <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
+                </div>
                 <UiTableGrid/>
             </UiMainWrap>
             <UiFooter/>

@@ -35,4 +35,23 @@
 
   }
 }
-
+.ui-btn-icon {
+  height: 14px;
+  margin: -2px 9px 0 0;
+}
+.ui-action-wr {
+  >button {
+    margin-right: 30px;
+    vertical-align: bottom;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .ui-img-btn {
+    min-width: 190px;
+  }
+  .ui-btn-sm {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}

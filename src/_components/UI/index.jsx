@@ -2,8 +2,9 @@ import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import SignInLeft from "./Container/SignInLeft";
 import {UiAlertContentWrapper} from "./Common/UiAlert";
-import {ButtonAuth} from "./OverrideMui/ButtonTypes";
+import {ButtonAuth, ButtonDefault, ButtonDelete, ButtonSelect} from "./OverrideMui/ButtonTypes";
 import Snackbar from "@material-ui/core/Snackbar";
+import {BtnIconAdd} from "./Common/SvgIcons";
 
 export default function SignInSide() {
 
@@ -22,14 +23,38 @@ export default function SignInSide() {
     }
 
     return (
-        <Grid container component="main">
-            <Grid container>
+        <Grid component="main">
+            <div>
                 <SignInLeft/>
-                <h2><a href={"/login"}>login</a></h2>
-                <h2><a href={"/register"}>register</a></h2>
-                <h2><a href={"/dashboard"}>dashboard</a></h2>
-                <h2><a href={"/datagrid"}>datagrid</a></h2>
-            </Grid>
+
+                <div>
+                    <h2><a href={"/login"}>login</a></h2>
+                    <h2><a href={"/register"}>register</a></h2>
+                    <h2><a href={"/dashboard"}>dashboard</a></h2>
+                    <h2><a href={"/datagrid"}>datagrid</a></h2>
+                </div>
+                <div className="block ui-action-wr">
+                    <h2>Buttons</h2>
+                    <ButtonAuth
+                        variant="contained"
+                        color="primary">Authenticate Primary</ButtonAuth>
+                    <ButtonAuth
+                        variant="outlined"
+                        color="primary">Authenticate Primary Stroked</ButtonAuth>
+                    <ButtonDefault
+                        variant="contained"
+                        color="primary">Default Primary</ButtonDefault>
+                    <ButtonDefault
+                        variant="outlined"
+                        color="primary">Default Primary Stroked</ButtonDefault>
+                    <ButtonDefault
+                        variant="contained"
+                        color="primary"
+                        className="ui-img-btn"><BtnIconAdd className="ui-btn-icon"/>Add New</ButtonDefault>
+                    <ButtonDelete>Delete</ButtonDelete>
+                    <ButtonSelect>Delete</ButtonSelect>
+                </div>
+            </div>
             <ButtonAuth
                 fullWidth
                 variant="contained"

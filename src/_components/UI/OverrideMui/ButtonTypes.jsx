@@ -5,11 +5,12 @@ import Button from '@material-ui/core/Button';
 const ButtonDefault = styled(Button)({
     fontSize: '14px',
     height: 40,
+    minWidth: '115px',
     borderRadius: '4px',
     boxShadow: 'unset',
-    padding: '0 30px',
+    padding: '0 25px',
     textTransform: 'unset',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
 });
 const ButtonAuth = styled(Button)({
     fontSize: '16px',
@@ -43,6 +44,36 @@ const ButtonAuth = styled(Button)({
         borderWidth: '2px',
     },
 });
+const ButtonDelete = styled(Button)({
+    fontSize: '14px',
+    height: 30,
+    minWidth: '83px',
+    borderRadius: '4px',
+    boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    border:'solid 1px #eef0f2',
+    padding: '0 15px',
+    margin: '5px auto',
+    textTransform: 'unset',
+    fontWeight: '500',
+    color: '#f9724e',
+    backgroundColor: '#ffffff'
+});
+const ButtonSelect  = styled(Button)({
+    fontSize: '14px',
+    height: 30,
+    minWidth: '83px',
+    borderRadius: '4px',
+    boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    border:'solid 1px #eef0f2',
+    padding: '0 15px',
+    margin: '5px auto',
+    textTransform: 'unset',
+    fontWeight: '500',
+    color: '#8c95a8',
+    backgroundColor: '#ffffff',
+});
 
 export {ButtonDefault};
 export {ButtonAuth};
+export {ButtonDelete};
+export {ButtonSelect};
