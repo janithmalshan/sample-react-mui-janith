@@ -23,7 +23,7 @@ const gelionMedium = {
     fontWeight: 500,
     src: `
     local('Gelion'),
-    local('Gelion-Bold'),
+    local('Gelion-Medium'),
     url(${GelionMedium}) format('woff')
   `,
 };
@@ -52,6 +52,9 @@ const ThemeDefault = createMuiTheme({
             main: variables.primaryColor,
             // dark: palette.secondary.A700,
             // contrastText: getContrastText(palette.secondary.A400),
+        },
+        text: {
+            primary: variables.primaryTextColor,
         },
         // error: {
         //     light: palette.error[300],
@@ -130,14 +133,14 @@ const ThemeDefault = createMuiTheme({
             root: {
                 fontSize: '14px',
                 lineHeight: '14px',
-                color: '#404553',
+                color: variables.primaryTextColor,
                 paddingTop: '0',
                 paddingBottom: '0',
                 backgroundColor: '#ffffff'
             },
             head: {
                 borderColor: "#eef0f2",
-                color: '#8c95a8',
+                color: variables.secondaryTextColor,
                 fontSize: '12px',
                 lineHeight: '28px',
                 paddingTop: '0',
@@ -148,7 +151,7 @@ const ThemeDefault = createMuiTheme({
                 height: '49px',
                 paddingTop: '7px',
                 paddingBottom: '7px',
-                color: '#404553',
+                color: variables.primaryTextColor,
                 borderColor: "#eef0f2",
                 fontSize: '14px',
                 lineHeight: '15px',
@@ -161,7 +164,7 @@ const ThemeDefault = createMuiTheme({
         MuiTablePagination: {
             toolbar: {
                 minHeight: '30px',
-                color: '#8c95a8',
+                color: variables.secondaryTextColor,
                 height: '36px'
             },
             actions: {
@@ -171,6 +174,25 @@ const ThemeDefault = createMuiTheme({
         MuiCheckbox: {
             root: {
                 padding: '5px',
+            }
+        },
+        MuiOutlinedInput: {
+            /* root: {
+                 "& $notchedOutline": {
+                     borderColor: "#b0b6c1"
+                 },
+             },*/
+            input: {
+                fontSize: '12px',
+                padding: '10px 15px 9px 17px',
+                lineHeight: '20px',
+                height: '20px',
+            },
+            multiline: {
+                padding: 0
+            },
+            inputMultiline: {
+                padding: '10px 15px 9px 17px',
             }
         }
     },
@@ -192,7 +214,7 @@ const ThemeDefaultAuth = createMuiTheme({
                  },
              },*/
             input: {
-                color: '#8c95a8',
+                color: variables.secondaryTextColor,
                 fontSize: '14px',
                 padding: '15px 15px 15px 20px',
                 lineHeight: '20px',

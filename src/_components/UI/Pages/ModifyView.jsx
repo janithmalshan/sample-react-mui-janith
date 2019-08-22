@@ -20,7 +20,7 @@ export default function DetailView() {
 
             <UiMainWrap>
                 <UiTitleWr>
-                    <h1 className="ui-title f-left">Detail View</h1>
+                    <h1 className="ui-title f-left">Add/Modify View</h1>
                     <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
                 </UiTitleWr>
                 <UiPaper>
@@ -30,35 +30,29 @@ export default function DetailView() {
                             <InputDefault
                                 id="email"
                                 name="email"
-                                placeholder="Placeholder"
-                                variant="outlined"
-                                // error={true}
-                                // helperText="Enter valid email address"
+                                placeholder="Multi Line Input Placeholder"
+                                multiline
                             />
                         </UiField>
                     </UiFieldSingleWr>
                     <UiFieldMultipleWr>
                         <UiField fieldtitle="BIN Number">
                             <InputDefault
-                                id="email"
-                                name="email"
                                 placeholder="Placeholder"
-                                variant="outlined"
+                                error={true}
+                                helperText="Enter valid BIN number"
                             />
                         </UiField>
                         <UiField fieldtitle="Number of Cards/ Limit">
                             <InputDefault
-                                id="email"
-                                name="email"
                                 placeholder="Placeholder"
-                                variant="outlined"
                             />
                         </UiField>
                     </UiFieldMultipleWr>
                 </UiPaper>
                 <UiActionWrBottom>
-                    <ButtonDefault variant="outlined" color="primary">Update</ButtonDefault>
-                    <ButtonDefault variant="contained" color="primary">Ok</ButtonDefault>
+                    <ButtonDefault variant="outlined" color="primary">Cancel</ButtonDefault>
+                    <ButtonDefault variant="contained" color="primary">Save</ButtonDefault>
                 </UiActionWrBottom>
             </UiMainWrap>
 

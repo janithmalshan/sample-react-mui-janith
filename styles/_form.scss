@@ -8,7 +8,6 @@
     font-stretch: normal;
     line-height: 52px;
     letter-spacing: normal;
-    color: #404553;
     padding: 0 $padding-h-form;
     margin: 0 (-$padding-h-form);
     border-bottom: solid 1px #eef0f2;;
@@ -21,6 +20,7 @@
   &:last-of-type{
     margin: 0;
   }
+  .ui-input {width: 100%}
   &-label {
     font-size: 12px;
     font-weight: 500;
@@ -28,7 +28,6 @@
     font-stretch: normal;
     line-height: 20px;
     letter-spacing: normal;
-    color: #404553;
     margin: 24px 0 10px;
     display: block;
   }
@@ -39,7 +38,6 @@
     font-stretch: normal;
     line-height: 1.13;
     letter-spacing: normal;
-    color: #404553;
     min-height: 40px;
     padding-top: 7px;
     margin: 0;
@@ -54,4 +52,7 @@
 }
 .ui-field-multiple {
   margin-bottom: 26px;
+}
+.ui-input {
+  margin: 0;
 }
