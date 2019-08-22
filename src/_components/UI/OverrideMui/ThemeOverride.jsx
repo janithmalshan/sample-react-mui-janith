@@ -2,6 +2,7 @@ import React from 'react';
 import {createMuiTheme} from '@material-ui/core/styles';
 import GelionRegular from '../../../../styles/font/gelion-regular.woff2';
 import GelionBold from '../../../../styles/font/gelion-bold.woff2';
+import GelionMedium from '../../../../styles/font/gelion-medium.woff';
 import variables from '../../../../styles/_variables.scss';
 
 const gelion = {
@@ -15,11 +16,22 @@ const gelion = {
     url(${GelionRegular}) format('woff2')
   `,
 };
+const gelionMedium = {
+    fontFamily: 'Gelion',
+    fontStyle: 'normal',
+    fontDisplay: 'swap',
+    fontWeight: 500,
+    src: `
+    local('Gelion'),
+    local('Gelion-Bold'),
+    url(${GelionMedium}) format('woff')
+  `,
+};
 const gelionBold = {
     fontFamily: 'Gelion',
     fontStyle: 'normal',
     fontDisplay: 'swap',
-    fontWeight: 600,
+    fontWeight: 700,
     src: `
     local('Gelion'),
     local('Gelion-Bold'),
@@ -86,7 +98,7 @@ const ThemeDefault = createMuiTheme({
         },
         MuiCssBaseline: {
             '@global': {
-                '@font-face': [gelion, gelionBold],
+                '@font-face': [gelion, gelionMedium, gelionBold],
             },
         },
         MuiPaper: {

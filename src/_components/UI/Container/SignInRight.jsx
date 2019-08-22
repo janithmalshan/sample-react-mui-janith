@@ -48,6 +48,8 @@ export default function SignInLeft() {
                         label="Email Address"
                         name="email"
                         autoComplete=""
+                        error={true}
+                        helperText="Enter valid email address"
                     />
                     <InputAuth
                         name="password"

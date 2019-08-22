@@ -32,6 +32,8 @@ export default function SignInSide() {
                     <h2><a href={"/register"}>register</a></h2>
                     <h2><a href={"/dashboard"}>dashboard</a></h2>
                     <h2><a href={"/datagrid"}>datagrid</a></h2>
+                    <h2><a href={"/detail"}>detail view</a></h2>
+                    <h2><a href={"/modify"}>modify view</a></h2>
                 </div>
                 <div className="block ui-action-wr">
                     <h2>Buttons</h2>
@@ -53,6 +55,9 @@ export default function SignInSide() {
                         className="ui-img-btn"><BtnIconAdd className="ui-btn-icon"/>Add New</ButtonDefault>
                     <ButtonDelete>Delete</ButtonDelete>
                     <ButtonSelect>Delete</ButtonSelect>
+                </div>
+                <div className="block">
+                    <h2>Svg Icons</h2>
                 </div>
             </div>
             <ButtonAuth

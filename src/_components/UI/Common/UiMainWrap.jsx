@@ -31,4 +31,34 @@ export const UiMainWrap = (props) => {
             </Grid>*/}
         </div>
     );
-}
+};
+
+export const UiPaper = (props) => {
+
+    return (
+        <div className="ui-main-wr-paper" {...props}>
+            {/**/}
+        </div>
+    );
+};
+
+export const UiTitleWr = (props) => {
+
+    return (
+        <div className="ui-title-wr clearfix" {...props}/>
+    );
+};
+
+export const UiActionWrTop = (props) => {
+
+    return (
+        <div className="ui-action-wr clearfix" {...props}/>
+    );
+};
+
+export const UiActionWrBottom = (props) => {
+
+    return (
+        <div className="t-right ui-action-wr" {...props}/>
+    );
+};
