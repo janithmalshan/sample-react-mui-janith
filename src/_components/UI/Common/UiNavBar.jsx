@@ -1,13 +1,8 @@
 import React from "react";
-import {makeStyles} from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer/SwipeableDrawer";
 import {IconLock, MenuIconClose, MenuIconOpen} from "./SvgIcons";
 import IconButton from "@material-ui/core/IconButton/IconButton";
 import Fab from '@material-ui/core/Fab';
-
-const useStyles = makeStyles(theme => ({
-//
-}));
 
 export const UiNavBar = (props) => {
     return (
@@ -19,7 +14,7 @@ export const UiNavBar = (props) => {
     );
 };
 
-export const UiNavBarMenu = (props) => {
+const UiNavBarMenu = (props) => {
     const [state, setState] = React.useState({
         top: false,
     });

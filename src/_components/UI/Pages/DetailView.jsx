@@ -5,6 +5,7 @@ import {InstrumentIcon} from "../Common/SvgIcons";
 import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "../Common/UiMainWrap";
 import {ButtonDefault, ButtonDelete} from "../OverrideMui/ButtonTypes";
 import {UiFooter} from "../Common/UiFooter";
+import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFieldValue} from "../Common/UiFormElements";
 
 export default function DetailView() {
     return (
@@ -22,8 +23,19 @@ export default function DetailView() {
                     <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
                 </UiTitleWr>
                 <UiPaper>
-                    /"
-                    45
+                    <UiFieldSingleWr>
+                        <UiField fieldtitle="Issuer/ Agregator">
+                            <UiFieldValue>9092 2999</UiFieldValue>
+                        </UiField>
+                    </UiFieldSingleWr>
+                    <UiFieldMultipleWr>
+                        <UiField fieldtitle="BIN Number">
+                            <UiFieldValue>9092 2999</UiFieldValue>
+                        </UiField>
+                        <UiField fieldtitle="Number of Cards/ Limit">
+                            <UiFieldValue>9092 2999</UiFieldValue>
+                        </UiField>
+                    </UiFieldMultipleWr>
                 </UiPaper>
                 <UiActionWrBottom>
                     <ButtonDefault variant="outlined" color="primary">Modify</ButtonDefault>

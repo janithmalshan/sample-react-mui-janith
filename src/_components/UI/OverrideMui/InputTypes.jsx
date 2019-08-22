@@ -97,7 +97,7 @@ const InputDefault = styled(TextField)({
     height: 40,
     borderRadius: '4px',
     boxShadow: 'unset',
-    padding: '0 30px',
+    padding: '0',
     textTransform: 'unset',
     fontWeight: 'bold'
 });
