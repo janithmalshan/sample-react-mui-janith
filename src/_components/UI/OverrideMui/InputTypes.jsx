@@ -3,6 +3,13 @@ import {makeStyles} from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import {styled} from "@material-ui/styles";
 // import makeStyles from "@material-ui/core/styles/makeStyles";
+import InputBase from '@material-ui/core/InputBase';
+import withStyles from "@material-ui/core/styles/withStyles";
+import Select from "@material-ui/core/Select/";
+import OutlinedInput from "@material-ui/core/OutlinedInput";
+import MenuItem from "@material-ui/core/MenuItem";
+
+
 
 const useStyles = makeStyles({
     cssLabel: {
@@ -123,5 +130,31 @@ const InputDefault = (props) => {
     );
 };
 
+const SelectDefault = (props) => {
+
+    // const classes = useStyles();
+    return (
+        <Select
+            value={props.selectvalue}
+            onChange={props.onChange}
+            input={<OutlinedInput fullWidth name={props.name} id={props.id}  labelWidth={0}/>}
+            {...props}
+        />
+    );
+};
+
+const OptionDefault = (props) => {
+    const classes = useStyles();
+
+    return (
+        <MenuItem
+            // value={props.value}
+            {...props}
+        />
+    );
+};
+
 export {InputDefault};
 export {InputAuth}
+export {SelectDefault}
+export {OptionDefault}

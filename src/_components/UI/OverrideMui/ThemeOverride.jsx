@@ -65,7 +65,7 @@ const ThemeDefault = createMuiTheme({
         type: 'light',
         // type: 'dark',
         background: {
-            paper: '#33ff55',
+            paper: '#fafcfe',
             default: '#fafcfe',
         },
     },
@@ -177,11 +177,14 @@ const ThemeDefault = createMuiTheme({
             }
         },
         MuiOutlinedInput: {
-            /* root: {
+             root: {
                  "& $notchedOutline": {
                      borderColor: "#b0b6c1"
                  },
-             },*/
+                 "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
+                     borderColor: '#8c95a8'
+                 },
+             },
             input: {
                 fontSize: '12px',
                 padding: '10px 15px 9px 17px',
@@ -193,6 +196,19 @@ const ThemeDefault = createMuiTheme({
             },
             inputMultiline: {
                 padding: '10px 15px 9px 17px',
+            }
+        },
+        MuiMenuItem: {
+            root: {
+                minHeight: 30,
+                color: variables.primaryTextColor,
+                fontSize: 12
+            }
+        },
+        MuiFormControlLabel: {
+            label: {
+                color: variables.primaryTextColor,
+                fontSize: 12
             }
         }
     },
