@@ -168,18 +168,18 @@ const ThemeDefault = createMuiTheme({
                 height: '36px'
             },
             actions: {
-            //
+                //
             }
         },
         MuiOutlinedInput: {
-             root: {
-                 "& $notchedOutline": {
-                     borderColor: "#b0b6c1"
-                 },
-                 "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
-                     borderColor: '#8c95a8'
-                 },
-             },
+            root: {
+                "& $notchedOutline": {
+                    borderColor: "#b0b6c1"
+                },
+                "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
+                    borderColor: '#8c95a8'
+                },
+            },
             input: {
                 fontSize: '12px',
                 padding: '10px 15px 9px 17px',

@@ -50,7 +50,7 @@ const ButtonDelete = styled(Button)({
     minWidth: '83px',
     borderRadius: '4px',
     boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-    border:'solid 1px #eef0f2',
+    border: 'solid 1px #eef0f2',
     padding: '0 15px',
     margin: '5px auto',
     textTransform: 'unset',
@@ -58,13 +58,13 @@ const ButtonDelete = styled(Button)({
     color: '#f9724e',
     backgroundColor: '#ffffff'
 });
-const ButtonSelect  = styled(Button)({
+const ButtonSelect = styled(Button)({
     fontSize: '14px',
     height: 30,
     minWidth: '83px',
     borderRadius: '4px',
     boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-    border:'solid 1px #eef0f2',
+    border: 'solid 1px #eef0f2',
     padding: '0 15px',
     margin: '5px auto',
     textTransform: 'unset',

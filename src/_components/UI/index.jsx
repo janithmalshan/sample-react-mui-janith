@@ -11,6 +11,7 @@ import {CheckboxDefault, InputDefault, OptionDefault, RadioDefault, SelectDefaul
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import RadioGroup from "@material-ui/core/RadioGroup";
+import UiTableGrid from "./Container/TableGrid";
 
 export default function SignInSide() {
 
@@ -30,8 +31,8 @@ export default function SignInSide() {
 
     return (
         <Grid component="main">
-            <div>
-                <SignInLeft/>
+            <SignInLeft/>
+            <UiMainWrap>
 
                 <div>
                     <h2><a href={"/login"}>login</a></h2>
@@ -66,115 +67,115 @@ export default function SignInSide() {
                     <h2>Svg Icons</h2>
                 </div>
                 <div className="block">
-                    <UiMainWrap>
-                        <UiTitleWr>
-                            <h1 className="ui-title f-left">Detail View</h1>
-                            <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
-                        </UiTitleWr>
-                        <UiPaper>
-                            <UiFieldSingleWr>
-                                <UiField fieldtitle="Issuer/ Agregator">
-                                    <UiFieldValue>9092 2999</UiFieldValue>
-                                </UiField>
-                            </UiFieldSingleWr>
-                            <UiFieldMultipleWr>
-                                <UiField fieldtitle="BIN Number">
-                                    <UiFieldValue>9092 2999</UiFieldValue>
-                                </UiField>
-                                <UiField fieldtitle="Number of Cards/ Limit">
-                                    <UiFieldValue>9092 2999</UiFieldValue>
-                                </UiField>
-                            </UiFieldMultipleWr>
-                        </UiPaper>
-                        <UiActionWrBottom>
-                            <ButtonDefault variant="outlined" color="primary">Modify</ButtonDefault>
-                            <ButtonDefault variant="contained" color="primary">Ok</ButtonDefault>
-                        </UiActionWrBottom>
+                    <UiTitleWr>
+                        <h1 className="ui-title f-left">Detail View</h1>
+                        <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
+                    </UiTitleWr>
+                    <UiPaper>
+                        <UiFieldSingleWr>
+                            <UiField fieldtitle="Issuer/ Agregator">
+                                <UiFieldValue>9092 2999</UiFieldValue>
+                            </UiField>
+                        </UiFieldSingleWr>
+                        <UiFieldMultipleWr>
+                            <UiField fieldtitle="BIN Number">
+                                <UiFieldValue>9092 2999</UiFieldValue>
+                            </UiField>
+                            <UiField fieldtitle="Number of Cards/ Limit">
+                                <UiFieldValue>9092 2999</UiFieldValue>
+                            </UiField>
+                        </UiFieldMultipleWr>
+                    </UiPaper>
+                    <UiActionWrBottom>
+                        <ButtonDefault variant="outlined" color="primary">Modify</ButtonDefault>
+                        <ButtonDefault variant="contained" color="primary">Ok</ButtonDefault>
+                    </UiActionWrBottom>
 
-                        <UiPaper>
-                            <UiFormTitle formtitle="Modify BIN"/>
-                            <UiFieldSingleWr>
-                                <UiField fieldtitle="Issuer/ Agregator">
-                                    <InputDefault
-                                        id="email"
-                                        name="email"
-                                        placeholder="Multi Line Input Placeholder"
-                                        multiline
+                    <UiPaper>
+                        <UiFormTitle formtitle="Modify BIN"/>
+                        <UiFieldSingleWr>
+                            <UiField fieldtitle="Issuer/ Agregator">
+                                <InputDefault
+                                    id="email"
+                                    name="email"
+                                    placeholder="Multi Line Input Placeholder"
+                                    multiline
+                                />
+                            </UiField>
+                        </UiFieldSingleWr>
+                        <UiFieldSingleWr>
+                            <UiField fieldtitle="Number of Cards/ Limit">
+                                <FormGroup row>
+                                    <FormControlLabel
+                                        className="ui-field__checkbox"
+                                        control={
+                                            <CheckboxDefault/>
+                                        }
+                                        label="Secondary"
                                     />
-                                </UiField>
-                            </UiFieldSingleWr>
-                            <UiFieldSingleWr>
-                                <UiField fieldtitle="Number of Cards/ Limit">
-                                    <FormGroup row>
-                                        <FormControlLabel
-                                            className="ui-field__checkbox"
-                                            control={
-                                                <CheckboxDefault/>
-                                            }
-                                            label="Secondary"
-                                        />
-                                        <FormControlLabel
-                                            className="ui-field__checkbox"
-                                            control={
-                                                <CheckboxDefault/>
-                                            }
-                                            label="SID"
-                                        />
-                                        <FormControlLabel
-                                            className="ui-field__checkbox"
-                                            control={
-                                                <CheckboxDefault/>
-                                            }
-                                            label="BT Num"
-                                        />
-                                    </FormGroup>
-                                </UiField>
-                            </UiFieldSingleWr>
-                            <UiFieldSingleWr>
-                                <UiField fieldtitle="Number of Cards/ Limit">
-                                    <RadioGroup row>
-                                        <FormControlLabel className="ui-field__checkbox" value="female"
-                                                          control={<RadioDefault/>} label="Female"/>
-                                        <FormControlLabel className="ui-field__checkbox" value="male" control={<RadioDefault/>}
-                                                          label="Male"/>
-                                    </RadioGroup>
-                                </UiField>
-                            </UiFieldSingleWr>
-                            <UiFieldMultipleWr>
-                                <UiField fieldtitle="BIN Number">
-                                    <InputDefault
-                                        placeholder="Placeholder"
-                                        error={true}
-                                        helperText="Enter valid BIN number"
+                                    <FormControlLabel
+                                        className="ui-field__checkbox"
+                                        control={
+                                            <CheckboxDefault/>
+                                        }
+                                        label="SID"
                                     />
-                                </UiField>
-                                <UiField fieldtitle="Number of Cards/ Limit">
-                                    <SelectDefault
-                                        name="name"
-                                        id="name"
-                                    >
-                                        <OptionDefault value="">
-                                            <em>None</em>
-                                        </OptionDefault>
-                                        <OptionDefault value={10}>Ten</OptionDefault>
-                                        <OptionDefault value={20}>Twenty</OptionDefault>
-                                        <OptionDefault value={30}>Thirty</OptionDefault>
-                                    </SelectDefault>
-                                </UiField>
-                            </UiFieldMultipleWr>
-                            <UiFieldSingleWr>
-                                <UiField fieldtitle="Full width select">
-                                    <SelectDefault>
-                                        <OptionDefault value="x">
-                                            <em>None</em>
-                                        </OptionDefault>
-                                    </SelectDefault>
-                                </UiField>
-                            </UiFieldSingleWr>
-                        </UiPaper>
-                    </UiMainWrap>
+                                    <FormControlLabel
+                                        className="ui-field__checkbox"
+                                        control={
+                                            <CheckboxDefault/>
+                                        }
+                                        label="BT Num"
+                                    />
+                                </FormGroup>
+                            </UiField>
+                        </UiFieldSingleWr>
+                        <UiFieldSingleWr>
+                            <UiField fieldtitle="Number of Cards/ Limit">
+                                <RadioGroup row>
+                                    <FormControlLabel className="ui-field__checkbox" value="female"
+                                                      control={<RadioDefault/>} label="Female"/>
+                                    <FormControlLabel className="ui-field__checkbox" value="male"
+                                                      control={<RadioDefault/>}
+                                                      label="Male"/>
+                                </RadioGroup>
+                            </UiField>
+                        </UiFieldSingleWr>
+                        <UiFieldMultipleWr>
+                            <UiField fieldtitle="BIN Number">
+                                <InputDefault
+                                    placeholder="Placeholder"
+                                    error={true}
+                                    helperText="Enter valid BIN number"
+                                />
+                            </UiField>
+                            <UiField fieldtitle="Number of Cards/ Limit">
+                                <SelectDefault
+                                    name="name"
+                                    id="name"
+                                >
+                                    <OptionDefault value="">
+                                        <em>None</em>
+                                    </OptionDefault>
+                                    <OptionDefault value={10}>Ten</OptionDefault>
+                                    <OptionDefault value={20}>Twenty</OptionDefault>
+                                    <OptionDefault value={30}>Thirty</OptionDefault>
+                                </SelectDefault>
+                            </UiField>
+                        </UiFieldMultipleWr>
+                        <UiFieldSingleWr>
+                            <UiField fieldtitle="Full width select">
+                                <SelectDefault>
+                                    <OptionDefault value="x">
+                                        <em>None</em>
+                                    </OptionDefault>
+                                </SelectDefault>
+                            </UiField>
+                        </UiFieldSingleWr>
+                    </UiPaper>
+                    <UiTableGrid/>
                 </div>
-            </div>
+            </UiMainWrap>
             <ButtonAuth
                 fullWidth
                 variant="contained"
