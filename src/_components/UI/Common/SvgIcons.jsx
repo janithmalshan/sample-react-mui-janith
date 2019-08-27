@@ -50,6 +50,23 @@ export const BtnIconAdd = (props) => {
         </svg>
     );
 };
+export const CheckBoxOutlineBlankIcon = () => {
+    return (
+        <svg width="18" height="18" viewBox="0 0 18 18">
+            <path fill="#FFF" fillRule="evenodd" stroke="#B0B6C1" d="M4 1h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3z"/>
+        </svg>
+    );
+};
+export const CheckBoxIcon = () => {
+    return (
+        <svg width="18" height="18" viewBox="0 0 18 18">
+            <g fill="none" fillRule="evenodd">
+                <path fill="#6764FF" stroke="#4B49C0" d="M4 1h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3z"/>
+                <path stroke="#FFF" strokeWidth="1.5" d="M5 8.725l2.749 2.685L13.159 6"/>
+            </g>
+        </svg>
+    );
+};
 export const InstrumentIcon = () => {
     const classes = useStyles();
     return (

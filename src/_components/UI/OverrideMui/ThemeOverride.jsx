@@ -171,11 +171,6 @@ const ThemeDefault = createMuiTheme({
             //
             }
         },
-        MuiCheckbox: {
-            root: {
-                padding: '5px',
-            }
-        },
         MuiOutlinedInput: {
              root: {
                  "& $notchedOutline": {

@@ -5,9 +5,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Checkbox from "@material-ui/core/Checkbox/Checkbox";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableFooter from "@material-ui/core/TableFooter";
+import {CheckboxDefault} from "../OverrideMui/InputTypes";
 
 function createData(name, calories, fat, carbs, protein) {
     return {name, calories, fat, carbs, protein};
@@ -44,7 +44,7 @@ export default function SimpleTable() {
                             <TableCell align="left">Limit</TableCell>
                             <TableCell align="left">Date/ Time Created</TableCell>
                             <TableCell align="center">
-                                <Checkbox
+                                <CheckboxDefault
                                     checked={true}
                                     // inputProps={{ 'aria-labelledby': labelId }}
                                 />
@@ -62,7 +62,7 @@ export default function SimpleTable() {
                                 <TableCell align="left">{row.carbs}</TableCell>
                                 <TableCell align="left">{row.protein}</TableCell>
                                 <TableCell align="center">
-                                    <Checkbox
+                                    <CheckboxDefault
                                         checked={false}
                                         // inputProps={{ 'aria-labelledby': labelId }}
                                     />

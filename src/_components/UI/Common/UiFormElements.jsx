@@ -12,7 +12,7 @@ export const UiFormWr = (props) => {
 export const UiFormTitle = (props) => {
 
     return (
-        <div className="ui-form-title">{props.formtitle}</div>
+        <div className="ui-form__title">{props.formtitle}</div>
     );
 };
 
@@ -43,14 +43,14 @@ export const UiField = (props) => {
 const UiFieldLabel = (props) => {
 
     return (
-        <label className="ui-field-label" {...props}/>
+        <label className="ui-field__label" {...props}/>
     );
 };
 
 export const UiFieldValue = (props) => {
 
     return (
-        <p className="ui-field-value" {...props}/>
+        <p className="ui-field__value" {...props}/>
     );
 };
 

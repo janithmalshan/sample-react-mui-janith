@@ -1,15 +1,13 @@
 import React from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import {styled} from "@material-ui/styles";
 // import makeStyles from "@material-ui/core/styles/makeStyles";
-import InputBase from '@material-ui/core/InputBase';
-import withStyles from "@material-ui/core/styles/withStyles";
 import Select from "@material-ui/core/Select/";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import MenuItem from "@material-ui/core/MenuItem";
-
-
+import Checkbox from "@material-ui/core/Checkbox";
+import {CheckBoxIcon, CheckBoxOutlineBlankIcon} from "../Common/SvgIcons";
+import Radio from "@material-ui/core/Radio";
 
 const useStyles = makeStyles({
     cssLabel: {
@@ -137,7 +135,7 @@ const SelectDefault = (props) => {
         <Select
             value={props.selectvalue}
             onChange={props.onChange}
-            input={<OutlinedInput fullWidth name={props.name} id={props.id}  labelWidth={0}/>}
+            input={<OutlinedInput fullWidth name={props.name} id={props.id} labelWidth={0}/>}
             {...props}
         />
     );
@@ -154,7 +152,33 @@ const OptionDefault = (props) => {
     );
 };
 
+const CheckboxDefault = (props) => {
+
+    return (
+        <Checkbox
+            style={{width: 36, height: 36, padding: 0, marginTop: '-2px', marginLeft: '2px'}}
+            icon={<CheckBoxOutlineBlankIcon/>}
+            checkedIcon={<CheckBoxIcon/>}
+            {...props}
+        />
+    );
+};
+
+const RadioDefault = (props) => {
+
+    return (
+        <Radio
+            style={{width: 30, height: 30, padding: 0, fontSize: 10, marginTop: '-2px', marginLeft: '4px'}}
+            color={"secondary"}
+            className="ui-radio"
+            {...props}
+        />
+    );
+};
+
 export {InputDefault};
 export {InputAuth}
 export {SelectDefault}
 export {OptionDefault}
+export {CheckboxDefault}
+export {RadioDefault}

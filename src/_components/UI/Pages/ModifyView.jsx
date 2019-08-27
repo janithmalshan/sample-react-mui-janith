@@ -6,18 +6,10 @@ import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "../Common/UiMain
 import {ButtonDefault, ButtonDelete} from "../OverrideMui/ButtonTypes";
 import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFormTitle} from "../Common/UiFormElements";
 import {UiFooter} from "../Common/UiFooter";
-import {InputDefault, OptionDefault, SelectDefault} from "../OverrideMui/InputTypes";
+import {CheckboxDefault, InputDefault, OptionDefault, RadioDefault, SelectDefault} from "../OverrideMui/InputTypes";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import Radio from "@material-ui/core/Radio";
-import Select from "@material-ui/core/Select";
-import NativeSelect from "@material-ui/core/NativeSelect";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import InputBase from '@material-ui/core/InputBase';
-import withStyles from "@material-ui/core/styles/withStyles";
+import RadioGroup from "@material-ui/core/RadioGroup/";
 
 export default function DetailView() {
     const [age, setAge] = React.useState('');
@@ -72,22 +64,25 @@ export default function DetailView() {
                         <UiField fieldtitle="Number of Cards/ Limit">
                             <FormGroup row>
                                 <FormControlLabel
+                                    className="ui-field__checkbox"
                                     control={
-                                        <Checkbox/>
+                                        <CheckboxDefault/>
                                     }
                                     label="Secondary"
                                 />
                                 <FormControlLabel
+                                    className="ui-field__checkbox"
                                     control={
-                                        <Checkbox/>
+                                        <CheckboxDefault/>
                                     }
-                                    label="Secondary"
+                                    label="SID"
                                 />
                                 <FormControlLabel
+                                    className="ui-field__checkbox"
                                     control={
-                                        <Checkbox/>
+                                        <CheckboxDefault/>
                                     }
-                                    label="Secondary"
+                                    label="BT Num"
                                 />
                             </FormGroup>
                         </UiField>
@@ -95,14 +90,10 @@ export default function DetailView() {
                     <UiFieldSingleWr>
                         <UiField fieldtitle="Number of Cards/ Limit">
                             <RadioGroup row>
-                                <FormControlLabel value="female" control={<Radio />} label="Female" />
-                                <FormControlLabel value="male" control={<Radio />} label="Male" />
-                                <FormControlLabel
-                                    value="disabled"
-                                    disabled
-                                    control={<Radio />}
-                                    label="(Disabled option)"
-                                />
+                                <FormControlLabel className="ui-field__checkbox" value="female"
+                                                  control={<RadioDefault/>} label="Female"/>
+                                <FormControlLabel className="ui-field__checkbox" value="male" control={<RadioDefault/>}
+                                                  label="Male"/>
                             </RadioGroup>
                         </UiField>
                     </UiFieldSingleWr>
@@ -120,6 +111,15 @@ export default function DetailView() {
                             />
                         </UiField>
                     </UiFieldMultipleWr>
+                    <UiFieldSingleWr>
+                        <UiField fieldtitle="Full width select">
+                            <SelectDefault>
+                                <OptionDefault value="x">
+                                    <em>None</em>
+                                </OptionDefault>
+                            </SelectDefault>
+                        </UiField>
+                    </UiFieldSingleWr>
                 </UiPaper>
                 <UiActionWrBottom>
                     <ButtonDefault variant="outlined" color="primary">Cancel</ButtonDefault>
