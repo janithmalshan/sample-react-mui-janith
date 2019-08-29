@@ -3,7 +3,8 @@ import {UiNavBar} from "../Common/UiNavBar";
 import {UiFooter} from "../Common/UiFooter";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
 import {InstrumentIcon} from "../Common/SvgIcons";
-import {UiMainWrap} from "../Common/UiMainWrap";
+import {UiMainWrap, UiTitleWr} from "../Common/UiMainWrap";
+import {ButtonDelete} from "../OverrideMui/ButtonTypes";
 
 export default function Dashboard() {
 
@@ -53,7 +54,11 @@ export default function Dashboard() {
                     tileDesc="Add or manage your users"/>
             </UiNavBar>
 
-            <UiMainWrap><h1>Main wrapper</h1></UiMainWrap>
+            <UiMainWrap>
+                <UiTitleWr>
+                    <h1 className="ui-title">Main wrapper</h1>
+                </UiTitleWr>
+            </UiMainWrap>
             <UiFooter/>
         </div>
     );

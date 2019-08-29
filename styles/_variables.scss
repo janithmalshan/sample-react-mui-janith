@@ -4,6 +4,7 @@ $prefix: ".ideahub-symphony";
 //Colors
 $primary: #6764ff;
 $secondary: #8482ff;
+$borderColor: #eef0f2;
 //$primary-dark : $primary;
 //$accent : #f2bd49;
 //$primary-alpha : rgba(62, 62, 100, 0.3);
@@ -18,6 +19,7 @@ $main-menu-bg: $default-bg-color;
   secondaryColor: $secondary;
   primaryTextColor: #404553;
   secondaryTextColor: #8c95a8;
+  borderColor: $borderColor;
 }
 
 ;

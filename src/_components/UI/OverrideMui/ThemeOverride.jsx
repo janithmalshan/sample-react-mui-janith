@@ -205,6 +205,44 @@ const ThemeDefault = createMuiTheme({
                 color: variables.primaryTextColor,
                 fontSize: 12
             }
+        },
+        MuiTabs: {
+            root: {
+                minWidth: 0,
+                marginLeft: 1,
+                minHeight: 50
+            },
+            indicator: {
+                height: 5,
+                borderRadius: 2.5,
+                backgroundColor: variables.primaryColor
+            }
+        },
+        MuiTab: {
+            root: {
+                textTransform: "initial",
+                minWidth: 0,
+                minHeight: 50,
+                margin: '0 14px',
+                padding: 0,
+                width: 'auto',
+                fontSize: "16px",
+                fontWeight: '600',
+                '@media (min-width: 0px)': {
+                    fontSize: "16px",
+                    minWidth: 0
+                },
+                '&$selected': {
+                    color: variables.primaryColor,
+                },
+            },
+            textColorInherit: {
+                opacity: 1,
+                color: variables.primaryTextColor,
+            },
+            labelContainer: {
+                padding: 0,
+            }
         }
     },
 });
