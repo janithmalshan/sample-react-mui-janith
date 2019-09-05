@@ -13,10 +13,13 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import UiTableGrid from "./Container/TableGrid";
 import {UiTab, UiTabs} from "./Common/UiTabs";
+import {UiDialog, UiDialogConfirm} from "./Common/UIDialog";
 
 export default function SignInSide() {
 
     const [open, setOpen] = React.useState(false);
+    const [open1, setOpen1] = React.useState(false);
+    const [open2, setOpen2] = React.useState(false);
 
     function handleClick() {
         setOpen(true);
@@ -30,19 +33,36 @@ export default function SignInSide() {
         setOpen(false);
     }
 
+    function handleClickConfirm() {
+        setOpen1(true);
+    }
+
+    function handleCloseConfirm() {
+        setOpen1(false);
+    }
+
+    function handleClickPop() {
+        setOpen2(true);
+    }
+
+    function handleClosePop() {
+        setOpen2(false);
+    }
+
     return (
         <Grid component="main">
             <SignInLeft/>
             <UiMainWrap>
 
-                <div>
-                    <h2><a href={"/login"}>login</a></h2>
-                    <h2><a href={"/register"}>register</a></h2>
-                    <h2><a href={"/dashboard"}>dashboard</a></h2>
-                    <h2><a href={"/datagrid"}>datagrid</a></h2>
-                    <h2><a href={"/detail"}>detail view</a></h2>
-                    <h2><a href={"/modify"}>modify view</a></h2>
+                <div className="block ui-action-wr">
+                    <ButtonDelete><a href={"/login"}>login</a></ButtonDelete>
+                    <ButtonDelete><a href={"/register"}>register</a></ButtonDelete>
+                    <ButtonDelete><a href={"/dashboard"}>dashboard</a></ButtonDelete>
+                    <ButtonDelete><a href={"/datagrid"}>datagrid</a></ButtonDelete>
+                    <ButtonDelete><a href={"/detail"}>detail view</a></ButtonDelete>
+                    <ButtonDelete><a href={"/modify"}>modify view</a></ButtonDelete>
                 </div>
+
                 <div className="block ui-action-wr">
                     <h2>Buttons</h2>
                     <ButtonAuth
@@ -64,8 +84,56 @@ export default function SignInSide() {
                     <ButtonDelete>Delete</ButtonDelete>
                     <ButtonSelect>Delete</ButtonSelect>
                 </div>
+
                 <div className="block">
                     <h2>Svg Icons</h2>
+                </div>
+
+                <div className="block ui-action-wr">
+                    <h2>Dialog</h2>
+                    <ButtonDefault variant="outlined" color="primary" onClick={handleClickConfirm}>
+                        Open confirm dialog
+                    </ButtonDefault>
+                    <ButtonDefault variant="outlined" color="primary" onClick={handleClickPop}>
+                        Open confirm dialog
+                    </ButtonDefault>
+                    <UiDialogConfirm open={open1} onClose={handleCloseConfirm} uiTitle="Delete">
+                        <p className="ui-text">Are you sure you want to delete this?</p>
+                    </UiDialogConfirm>
+                    <UiDialog open={open2} onClose={handleClosePop} uiTitle="Modify BIN">
+                        <UiFieldSingleWr>
+                            <UiField fieldtitle="Issuer/ Agregator">
+                                <InputDefault
+                                    id="email"
+                                    name="email"
+                                    placeholder="Multi Line Input Placeholder"
+                                    multiline
+                                />
+                            </UiField>
+                        </UiFieldSingleWr>
+                        <UiFieldMultipleWr>
+                            <UiField fieldtitle="BIN Number">
+                                <InputDefault
+                                    placeholder="Placeholder"
+                                    error={true}
+                                    helperText="Enter valid BIN number"
+                                />
+                            </UiField>
+                            <UiField fieldtitle="Number of Cards/ Limit">
+                                <SelectDefault
+                                    name="name"
+                                    id="name"
+                                >
+                                    <OptionDefault value="">
+                                        <em>None</em>
+                                    </OptionDefault>
+                                    <OptionDefault value={10}>Ten</OptionDefault>
+                                    <OptionDefault value={20}>Twenty</OptionDefault>
+                                    <OptionDefault value={30}>Thirty</OptionDefault>
+                                </SelectDefault>
+                            </UiField>
+                        </UiFieldMultipleWr>
+                    </UiDialog>
                 </div>
                 <UiTitleWr>
                     <h1 className="ui-title f-left">Detail View</h1>

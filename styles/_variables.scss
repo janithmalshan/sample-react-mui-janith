@@ -5,6 +5,8 @@ $prefix: ".ideahub-symphony";
 $primary: #6764ff;
 $secondary: #8482ff;
 $borderColor: #eef0f2;
+$primaryTextColor: #404553;
+$secondaryTextColor: #8c95a8;
 //$primary-dark : $primary;
 //$accent : #f2bd49;
 //$primary-alpha : rgba(62, 62, 100, 0.3);
@@ -17,8 +19,8 @@ $main-menu-bg: $default-bg-color;
 :export {
   primaryColor: $primary;
   secondaryColor: $secondary;
-  primaryTextColor: #404553;
-  secondaryTextColor: #8c95a8;
+  primaryTextColor: $primaryTextColor;
+  secondaryTextColor: $secondaryTextColor;
   borderColor: $borderColor;
 }
 

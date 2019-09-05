@@ -111,7 +111,7 @@ const ThemeDefault = createMuiTheme({
         },
         MuiBackdrop: {
             root: {
-                backgroundColor: 'rgba(150, 150, 150, 0.1)',
+                backgroundColor: 'rgba(64, 69, 83, 0.5)',
             }
         },
         MuiFab: {
