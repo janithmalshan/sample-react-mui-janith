@@ -1,7 +1,7 @@
 import React from "react";
 import {UiNavBar} from "../Common/UiNavBar";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
-import {InstrumentIcon} from "../Common/SvgIcons";
+import {HomeIcon, InstrumentIcon} from "../Common/SvgIcons";
 import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "../Common/UiMainWrap";
 import {ButtonDefault, ButtonDelete} from "../OverrideMui/ButtonTypes";
 import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFormTitle} from "../Common/UiFormElements";
@@ -10,6 +10,7 @@ import {CheckboxDefault, InputDefault, OptionDefault, RadioDefault, SelectDefaul
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormGroup from "@material-ui/core/FormGroup";
 import RadioGroup from "@material-ui/core/RadioGroup/";
+import TestIcon from "../../../../styles/img/ic_pay_master.png"
 
 export default function DetailView() {
     const [age, setAge] = React.useState('');
@@ -44,19 +45,17 @@ export default function DetailView() {
                         </UiField>
                     </UiFieldSingleWr>
                     <UiFieldMultipleWr>
-                        <UiField fieldtitle="Age">
+                        <UiField fieldtitle="Card Type">
                             <SelectDefault
                                 selectvalue={age}
                                 onChange={handleChange}
                                 name="name"
                                 id="name"
+                                displayEmpty
                             >
-                                <OptionDefault value="">
-                                    <em>None</em>
-                                </OptionDefault>
-                                <OptionDefault value={10}>Ten</OptionDefault>
-                                <OptionDefault value={20}>Twenty</OptionDefault>
-                                <OptionDefault value={30}>Thirty</OptionDefault>
+                                <OptionDefault value=""><img src={TestIcon} className="ui-select-icon"/>Master</OptionDefault>
+                                <OptionDefault value={20}><img src={TestIcon} className="ui-select-icon"/>Twenty</OptionDefault>
+                                <OptionDefault value={30}><img src={TestIcon} className="ui-select-icon"/>Thirty</OptionDefault>
                             </SelectDefault>
                         </UiField>
                     </UiFieldMultipleWr>

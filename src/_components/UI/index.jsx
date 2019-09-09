@@ -4,7 +4,14 @@ import SignInLeft from "./Container/SignInLeft";
 import {UiAlertContentWrapper} from "./Common/UiAlert";
 import {ButtonAuth, ButtonDefault, ButtonDelete, ButtonSelect} from "./OverrideMui/ButtonTypes";
 import Snackbar from "@material-ui/core/Snackbar";
-import {BtnIconAdd} from "./Common/SvgIcons";
+import {
+    BtnIconAdd,
+    CheckBoxIcon,
+    CheckBoxOutlineBlankIcon,
+    IconLock, InstrumentIcon,
+    MenuIconClose,
+    MenuIconOpen
+} from "./Common/SvgIcons";
 import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "./Common/UiMainWrap";
 import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFieldValue, UiFormTitle} from "./Common/UiFormElements";
 import {CheckboxDefault, InputDefault, OptionDefault, RadioDefault, SelectDefault} from "./OverrideMui/InputTypes";
@@ -85,8 +92,10 @@ export default function SignInSide() {
                     <ButtonSelect>Delete</ButtonSelect>
                 </div>
 
-                <div className="block">
+                <div className="block ui-svg-set">
                     <h2>Svg Icons</h2>
+                    <MenuIconOpen/><MenuIconClose/><IconLock/>
+                    <CheckBoxOutlineBlankIcon/><CheckBoxIcon/><InstrumentIcon/>
                 </div>
 
                 <div className="block ui-action-wr">
@@ -95,7 +104,7 @@ export default function SignInSide() {
                         Open confirm dialog
                     </ButtonDefault>
                     <ButtonDefault variant="outlined" color="primary" onClick={handleClickPop}>
-                        Open confirm dialog
+                        Open form dialog
                     </ButtonDefault>
                     <UiDialogConfirm open={open1} onClose={handleCloseConfirm} uiTitle="Delete">
                         <p className="ui-text">Are you sure you want to delete this?</p>
