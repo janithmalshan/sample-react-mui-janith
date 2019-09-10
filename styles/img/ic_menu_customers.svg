@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:url(#path-2_3_);}
+	.st2{filter:url(#filter-3);}
+	.st3{fill:none;stroke:#000000;stroke-width:2;}
+	.st4{fill:url(#path-5_3_);}
+	.st5{filter:url(#filter-6);}
+	.st6{fill:url(#path-8_3_);}
+	.st7{filter:url(#filter-9);}
+	.st8{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;}
+	.st9{fill:url(#path-10_3_);}
+	.st10{filter:url(#filter-11);}
+	.st11{fill:url(#path-13_3_);}
+	.st12{filter:url(#filter-14);}
+</style>
+<filter  filterUnits="objectBoundingBox" height="115.2%" id="filter-9" width="126.9%" x="-13.4%" y="-7.6%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="136.2%" id="filter-6" width="136.2%" x="-18.1%" y="-18.1%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="110.0%" id="filter-3" width="110.0%" x="-5.0%" y="-5.0%">
+	<feOffset  dx="4" dy="3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.304605551 0">
+		</feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="115.2%" id="filter-14" width="129.6%" x="-14.8%" y="-7.6%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="136.2%" id="filter-11" width="136.2%" x="-18.1%" y="-18.1%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<title>users</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Icons" transform="translate(-458.000000, -700.000000)">
+		<g id="users" transform="translate(439.000000, 686.000000)">
+			<rect id="Rectangle-Copy-27" x="19" y="13.5" class="st0" width="100" height="100"/>
+			<g id="Group-14" transform="translate(20.000000, 15.000000)">
+				<g id="Oval">
+					<g>
+						
+							<linearGradient id="path-2_3_" gradientUnits="userSpaceOnUse" x1="0.8" y1="98.2833" x2="0.8" y2="99.2833" gradientTransform="matrix(60 0 0 -60 1 5970.5)">
+							<stop  offset="0" style="stop-color:#D763FF"/>
+							<stop  offset="1" style="stop-color:#8B64FA"/>
+						</linearGradient>
+						<circle id="path-2" class="st1" cx="49" cy="43.5" r="30"/>
+					</g>
+					<g class="st2">
+						<circle id="path-2_4_" cx="49" cy="43.5" r="30"/>
+					</g>
+					<g>
+						<circle id="path-2_2_" class="st3" cx="49" cy="43.5" r="30"/>
+					</g>
+				</g>
+				<g id="Group-15" transform="translate(5.000000, 11.000000)">
+					<g id="Group-16" transform="translate(-0.000000, 0.000000)">
+						<g id="Oval_1_">
+							<g>
+								
+									<linearGradient id="path-5_3_" gradientUnits="userSpaceOnUse" x1="-3.4154" y1="87.7167" x2="-3.4154" y2="86.7167" gradientTransform="matrix(16.5957 0 0 -16.5957 87.8085 1469.2234)">
+									<stop  offset="0" style="stop-color:#FDEB86"/>
+									<stop  offset="1" style="stop-color:#F9724E"/>
+								</linearGradient>
+								<circle id="path-5" class="st4" cx="31.1" cy="21.8" r="8.3"/>
+							</g>
+							<g class="st5">
+								<circle id="path-5_4_" cx="31.1" cy="21.8" r="8.3"/>
+							</g>
+							<g>
+								<circle id="path-5_2_" class="st3" cx="31.1" cy="21.8" r="8.3"/>
+							</g>
+						</g>
+						<g id="Combined-Shape">
+							<g>
+								
+									<linearGradient id="path-8_3_" gradientUnits="userSpaceOnUse" x1="-3.7579" y1="88.1715" x2="-3.7579" y2="87.1715" gradientTransform="matrix(24.2553 0 0 -39.5745 122.2766 3523.2661)">
+									<stop  offset="0" style="stop-color:#FDEB86"/>
+									<stop  offset="1" style="stop-color:#F9724E"/>
+								</linearGradient>
+								<path id="path-8" class="st6" d="M31.8,73.5h-4.7l-1.7-18.3H19l5-21.3h7.8h6.5l5,21.3h-6.4l-1.7,18.3H31.8z"/>
+							</g>
+							<g class="st7">
+								<path id="path-8_4_" d="M31.8,73.5h-4.7l-1.7-18.3H19l5-21.3h7.8h6.5l5,21.3h-6.4l-1.7,18.3H31.8z"/>
+							</g>
+							<g>
+								<path id="path-8_2_" class="st3" d="M31.8,73.5h-4.7l-1.7-18.3H19l5-21.3h7.8h6.5l5,21.3h-6.4l-1.7,18.3H31.8z"/>
+							</g>
+						</g>
+						<path id="Line-3" class="st8" d="M31.1,33.9V49"/>
+					</g>
+				</g>
+				<g id="Group-15-Copy" transform="translate(33.000000, 11.000000)">
+					<g id="Group-16_1_">
+						<g id="Oval_2_">
+							<g>
+								
+									<linearGradient id="path-10_3_" gradientUnits="userSpaceOnUse" x1="-31.4154" y1="87.7167" x2="-31.4154" y2="86.7167" gradientTransform="matrix(16.5957 0 0 -16.5957 551.4894 1469.2234)">
+									<stop  offset="0" style="stop-color:#FDEB86"/>
+									<stop  offset="1" style="stop-color:#F9724E"/>
+								</linearGradient>
+								<circle id="path-10" class="st9" cx="30.1" cy="21.8" r="8.3"/>
+							</g>
+							<g class="st10">
+								<circle id="path-10_4_" cx="30.1" cy="21.8" r="8.3"/>
+							</g>
+							<g>
+								<circle id="path-10_2_" class="st3" cx="30.1" cy="21.8" r="8.3"/>
+							</g>
+						</g>
+						<g id="Combined-Shape_1_">
+							<g>
+								
+									<linearGradient id="path-13_3_" gradientUnits="userSpaceOnUse" x1="-31.6121" y1="88.1715" x2="-31.6121" y2="87.1715" gradientTransform="matrix(20.2716 0 0 -39.5745 670.9554 3523.2661)">
+									<stop  offset="0" style="stop-color:#FDEB86"/>
+									<stop  offset="1" style="stop-color:#F9724E"/>
+								</linearGradient>
+								<path id="path-13" class="st11" d="M30.8,73.5h-4.7l-1.7-18.3H20l0-21.3h10.8h9.5l0,21.3h-4.4l-1.7,18.3H30.8z"/>
+							</g>
+							<g class="st12">
+								<path id="path-13_4_" d="M30.8,73.5h-4.7l-1.7-18.3H20l0-21.3h10.8h9.5l0,21.3h-4.4l-1.7,18.3H30.8z"/>
+							</g>
+							<g>
+								<path id="path-13_2_" class="st3" d="M30.8,73.5h-4.7l-1.7-18.3H20l0-21.3h10.8h9.5l0,21.3h-4.4l-1.7,18.3H30.8z"/>
+							</g>
+						</g>
+						<path id="Line-3_1_" class="st8" d="M30.1,33.9V49"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

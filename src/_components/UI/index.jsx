@@ -8,9 +8,22 @@ import {
     BtnIconAdd,
     CheckBoxIcon,
     CheckBoxOutlineBlankIcon,
-    IconLock, InstrumentIcon,
+    IconLock,
+    IconMerchants,
+    InstrumentIcon,
     MenuIconClose,
-    MenuIconOpen
+    MenuIconConfigs,
+    MenuIconCustomers,
+    MenuIconDeals,
+    MenuIconLoyalty,
+    MenuIconMerchants,
+    MenuIconNotifications,
+    MenuIconOpen,
+    MenuIconReports,
+    MenuIconStore,
+    MenuIconTransactions,
+    MenuIconUsers,
+    MenuIconWorkflows
 } from "./Common/SvgIcons";
 import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "./Common/UiMainWrap";
 import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFieldValue, UiFormTitle} from "./Common/UiFormElements";
@@ -96,6 +109,9 @@ export default function SignInSide() {
                     <h2>Svg Icons</h2>
                     <MenuIconOpen/><MenuIconClose/><IconLock/>
                     <CheckBoxOutlineBlankIcon/><CheckBoxIcon/><InstrumentIcon/>
+                    <MenuIconStore/><MenuIconLoyalty/><MenuIconDeals/><MenuIconNotifications/><MenuIconCustomers/><MenuIconReports/>
+                    <MenuIconTransactions/><MenuIconConfigs/><MenuIconWorkflows/><MenuIconUsers/><MenuIconMerchants/>
+                    <InstrumentIcon/>
                 </div>
 
                 <div className="block ui-action-wr">

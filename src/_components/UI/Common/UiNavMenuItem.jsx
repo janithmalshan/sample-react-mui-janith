@@ -32,9 +32,9 @@ const useStyles = makeStyles({
     },
     image: {
         display: 'inline-block',
-        margin: '0 2px',
-        width: 50,
-        height: 50,
+        margin: '-20px 0 0 -10px',
+        width: 100,
+        height: 100,
     },
     title: {
         fontSize: 16,
