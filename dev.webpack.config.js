@@ -44,6 +44,7 @@ module.exports = merge(baseConfig, {
         }),
 
     ],
+
     devServer: {
         historyApiFallback: true
     },

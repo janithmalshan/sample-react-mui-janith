@@ -56,39 +56,44 @@ const useStyles = makeStyles({
     },
 });
 
-const InputAuth = (props) => {
+export const InputAuth = (props) => {
 
     const classes = useStyles();
     return (
-        <TextField
-            className={'testInput'}
-            InputLabelProps={{
-                classes: {
-                    root: classes.cssLabel,
-                    focused: classes.cssFocused,
-                    shrink: classes.cssShrink,
-                },
-            }}
-            InputProps={{
-                classes: {
-                    root: classes.cssOutlinedInput,
-                    focused: classes.cssFocused,
-                    notchedOutline: classes.notchedOutline,
-                },
-            }}
-            variant="outlined"
-            margin="normal"
-            required={props.required}
-            fullWidth
-            id={props.id}
-            label={props.label}
-            name={props.name}
-            autoComplete={props.autoComplete}
-            type={props.type}
-            helperText={props.helperText}
-            error={props.error}
-            // autoFocus
-        />
+
+        <div>
+            <TextField
+                className={'testInput'}
+                InputLabelProps={{
+                    classes: {
+                        root: classes.cssLabel,
+                        focused: classes.cssFocused,
+                        shrink: classes.cssShrink,
+                    },
+                }}
+                InputProps={{
+                    classes: {
+                        root: classes.cssOutlinedInput,
+                        focused: classes.cssFocused,
+                        notchedOutline: classes.notchedOutline,
+                    },
+                }}
+                variant="outlined"
+                margin="normal"
+                required={props.required}
+                fullWidth
+                id={props.id}
+                label={props.label}
+                name={props.name}
+                autoComplete={props.autoComplete}
+                type={props.type}
+                helperText={props.helperText}
+                error={props.error}
+                onChange={props.onChange}
+                // autoFocus
+            />
+        </div>
+
     );
 };
 

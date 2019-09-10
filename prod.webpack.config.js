@@ -11,9 +11,11 @@ module.exports = merge(baseConfig, {
 
     output: {
         path: BUILD_DIR,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
 
     },
+
+
 
     resolve: {
         extensions: ['.js', '.jsx']
