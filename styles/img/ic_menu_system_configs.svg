@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:url(#path-2_3_);}
+	.st2{filter:url(#filter-3);}
+	.st3{fill:none;stroke:#000000;stroke-width:2;}
+	.st4{fill:url(#path-5_3_);}
+	.st5{filter:url(#filter-6);}
+	.st6{fill:url(#path-8_3_);}
+	.st7{filter:url(#filter-9);}
+	.st8{fill:url(#path-11_3_);}
+	.st9{filter:url(#filter-12);}
+</style>
+<filter  filterUnits="objectBoundingBox" height="135.3%" id="filter-9" width="135.3%" x="-17.6%" y="-17.6%">
+	<feOffset  dx="4" dy="3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.304605551 0">
+		</feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="124.0%" id="filter-6" width="110.5%" x="-5.3%" y="-12.0%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="124.0%" id="filter-3" width="110.5%" x="-5.3%" y="-12.0%">
+	<feOffset  dx="4" dy="3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.304605551 0">
+		</feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="135.3%" id="filter-12" width="135.3%" x="-17.6%" y="-17.6%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<title>system configs</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Icons" transform="translate(-1080.000000, -460.000000)">
+		<g id="system-configs" transform="translate(1058.000000, 440.000000)">
+			<rect id="Rectangle-Copy-27" x="20.5" y="18.5" class="st0" width="100" height="100"/>
+			<g id="Group-12" transform="translate(23.000000, 21.000000)">
+				<g id="Rectangle">
+					<g>
+						
+							<linearGradient id="path-2_3_" gradientUnits="userSpaceOnUse" x1="0.3509" y1="97.78" x2="0.3509" y2="98.78" gradientTransform="matrix(57 0 0 -25 29 2524)">
+							<stop  offset="0" style="stop-color:#D763FF"/>
+							<stop  offset="1" style="stop-color:#8B64FA"/>
+						</linearGradient>
+						<path id="path-2" class="st1" d="M33,54.5h32c6.9,0,12.5,5.6,12.5,12.5l0,0c0,6.9-5.6,12.5-12.5,12.5H33
+							c-6.9,0-12.5-5.6-12.5-12.5l0,0C20.5,60.1,26.1,54.5,33,54.5z"/>
+					</g>
+					<g class="st2">
+						<path id="path-2_4_" d="M33,54.5h32c6.9,0,12.5,5.6,12.5,12.5l0,0c0,6.9-5.6,12.5-12.5,12.5H33c-6.9,0-12.5-5.6-12.5-12.5l0,0
+							C20.5,60.1,26.1,54.5,33,54.5z"/>
+					</g>
+					<g>
+						<path id="path-2_2_" class="st3" d="M33,54.5h32c6.9,0,12.5,5.6,12.5,12.5l0,0c0,6.9-5.6,12.5-12.5,12.5H33
+							c-6.9,0-12.5-5.6-12.5-12.5l0,0C20.5,60.1,26.1,54.5,33,54.5z"/>
+					</g>
+				</g>
+				<g id="Rectangle-Copy-32">
+					<g>
+						
+							<linearGradient id="path-5_3_" gradientUnits="userSpaceOnUse" x1="0.3509" y1="98.78" x2="0.3509" y2="97.78" gradientTransform="matrix(57 0 0 -25 29 2488)">
+							<stop  offset="0" style="stop-color:#FDEB86"/>
+							<stop  offset="1" style="stop-color:#F9724E"/>
+						</linearGradient>
+						<path id="path-5" class="st4" d="M33,18.5h32c6.9,0,12.5,5.6,12.5,12.5l0,0c0,6.9-5.6,12.5-12.5,12.5H33
+							c-6.9,0-12.5-5.6-12.5-12.5l0,0C20.5,24.1,26.1,18.5,33,18.5z"/>
+					</g>
+					<g class="st5">
+						<path id="path-5_4_" d="M33,18.5h32c6.9,0,12.5,5.6,12.5,12.5l0,0c0,6.9-5.6,12.5-12.5,12.5H33c-6.9,0-12.5-5.6-12.5-12.5l0,0
+							C20.5,24.1,26.1,18.5,33,18.5z"/>
+					</g>
+					<g>
+						<path id="path-5_2_" class="st3" d="M33,18.5h32c6.9,0,12.5,5.6,12.5,12.5l0,0c0,6.9-5.6,12.5-12.5,12.5H33
+							c-6.9,0-12.5-5.6-12.5-12.5l0,0C20.5,24.1,26.1,18.5,33,18.5z"/>
+					</g>
+				</g>
+				<g id="Rectangle-Copy-32_1_">
+					<g>
+						
+							<linearGradient id="path-8_3_" gradientUnits="userSpaceOnUse" x1="1.1765" y1="97.4412" x2="1.1765" y2="98.4412" gradientTransform="matrix(17 0 0 -17 43.5 1696)">
+							<stop  offset="0" style="stop-color:#D763FF"/>
+							<stop  offset="1" style="stop-color:#8B64FA"/>
+						</linearGradient>
+						<path id="path-8" class="st6" d="M63.5,22.5L63.5,22.5c4.7,0,8.5,3.8,8.5,8.5l0,0c0,4.7-3.8,8.5-8.5,8.5l0,0
+							c-4.7,0-8.5-3.8-8.5-8.5l0,0C55,26.3,58.8,22.5,63.5,22.5z"/>
+					</g>
+					<g class="st7">
+						<path id="path-8_4_" d="M63.5,22.5L63.5,22.5c4.7,0,8.5,3.8,8.5,8.5l0,0c0,4.7-3.8,8.5-8.5,8.5l0,0c-4.7,0-8.5-3.8-8.5-8.5
+							l0,0C55,26.3,58.8,22.5,63.5,22.5z"/>
+					</g>
+					<g>
+						<path id="path-8_2_" class="st3" d="M63.5,22.5L63.5,22.5c4.7,0,8.5,3.8,8.5,8.5l0,0c0,4.7-3.8,8.5-8.5,8.5l0,0
+							c-4.7,0-8.5-3.8-8.5-8.5l0,0C55,26.3,58.8,22.5,63.5,22.5z"/>
+					</g>
+				</g>
+				<g id="Rectangle-Copy-34">
+					<g>
+						
+							<linearGradient id="path-11_3_" gradientUnits="userSpaceOnUse" x1="1.1765" y1="98.4412" x2="1.1765" y2="97.4412" gradientTransform="matrix(17 0 0 -17 14 1732)">
+							<stop  offset="0" style="stop-color:#FDEB86"/>
+							<stop  offset="1" style="stop-color:#F9724E"/>
+						</linearGradient>
+						<path id="path-11" class="st8" d="M34,58.5L34,58.5c4.7,0,8.5,3.8,8.5,8.5l0,0c0,4.7-3.8,8.5-8.5,8.5l0,0
+							c-4.7,0-8.5-3.8-8.5-8.5l0,0C25.5,62.3,29.3,58.5,34,58.5z"/>
+					</g>
+					<g class="st9">
+						<path id="path-11_4_" d="M34,58.5L34,58.5c4.7,0,8.5,3.8,8.5,8.5l0,0c0,4.7-3.8,8.5-8.5,8.5l0,0c-4.7,0-8.5-3.8-8.5-8.5l0,0
+							C25.5,62.3,29.3,58.5,34,58.5z"/>
+					</g>
+					<g>
+						<path id="path-11_2_" class="st3" d="M34,58.5L34,58.5c4.7,0,8.5,3.8,8.5,8.5l0,0c0,4.7-3.8,8.5-8.5,8.5l0,0
+							c-4.7,0-8.5-3.8-8.5-8.5l0,0C25.5,62.3,29.3,58.5,34,58.5z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

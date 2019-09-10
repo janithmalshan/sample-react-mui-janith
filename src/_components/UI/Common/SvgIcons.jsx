@@ -1,11 +1,22 @@
 import React from "react";
 import SvgIcon from '@material-ui/core/SvgIcon';
 import {makeStyles} from "@material-ui/core/styles";
+import IconStore from "../../../../styles/img/ic_menu_store.svg"
+import IconLoyalty from "../../../../styles/img/ic_menu_loyalty.svg"
+import IconDeals from "../../../../styles/img/ic_menu_deals.svg"
+import IconNotifications from "../../../../styles/img/ic_menu_notifications.svg"
+import IconCustomers from "../../../../styles/img/ic_menu_customers.svg"
+import IconReports from "../../../../styles/img/ic_menu_reports.svg"
+import IconTransactions from "../../../../styles/img/ic_menu_transactions.svg"
+import IconConfigs from "../../../../styles/img/ic_menu_system_configs.svg"
+import IconWorkflows from "../../../../styles/img/ic_menu_workflows.svg"
+import IconUsers from "../../../../styles/img/ic_menu_users.svg"
+import IconMerchants from "../../../../styles/img/ic_menu_merchants.svg"
 
 const useStyles = makeStyles({
     rootSvgNavMenuIcon: {
-        width: 50,
-        height: 50,
+        width: 100,
+        height: 100,
         //viewBox="0 0 50 50" could not resize
     }
 });
@@ -84,5 +95,71 @@ export const InstrumentIcon = () => {
                 </g>
             </g>
         </SvgIcon>
+    );
+};
+export const MenuIconStore = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconStore} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconLoyalty = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconLoyalty} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconDeals = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconDeals} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconNotifications = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconNotifications} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconCustomers = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconCustomers} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconReports = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconReports} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconTransactions = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconTransactions} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconConfigs = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconConfigs} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconWorkflows = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconWorkflows} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconUsers = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconUsers} className={classes.rootSvgNavMenuIcon}/>
+    );
+};
+export const MenuIconMerchants = () => {
+    const classes = useStyles();
+    return (
+        <img src={IconMerchants} className={classes.rootSvgNavMenuIcon}/>
     );
 };

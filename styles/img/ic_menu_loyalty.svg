@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:url(#path-2_3_);}
+	.st2{filter:url(#filter-3);}
+	.st3{fill:none;stroke:#000000;stroke-width:2;}
+	.st4{fill:url(#path-4_3_);}
+	.st5{filter:url(#filter-5);}
+	.st6{fill:url(#path-7_3_);}
+	.st7{filter:url(#filter-8);}
+	.st8{fill:url(#path-10_3_);}
+	.st9{filter:url(#filter-11);}
+</style>
+<filter  filterUnits="objectBoundingBox" height="115.0%" id="filter-8" width="115.1%" x="-7.5%" y="-7.5%">
+	<feOffset  dx="4" dy="3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.304605551 0">
+		</feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="138.7%" id="filter-5" width="120.6%" x="-11.4%" y="-19.4%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="164.3%" id="filter-3" width="132.9%" x="-17.6%" y="-32.1%">
+	<feOffset  dx="8" dy="5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<filter  filterUnits="objectBoundingBox" height="128.4%" id="filter-11" width="134.0%" x="-17.0%" y="-20.0%">
+	<feOffset  dx="3" dy="4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.3 0"></feColorMatrix>
+</filter>
+<title>Loyalty</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Icons" transform="translate(-458.000000, -220.000000)">
+		<g id="Loyalty" transform="translate(439.000000, 194.000000)">
+			<rect id="Rectangle-Copy-26" x="19" y="21.5" class="st0" width="100" height="100"/>
+			<g id="Loyalty-Copy-8" transform="translate(21.333333, 18.666667)">
+				<g id="Group-17" transform="translate(0.000000, 0.428571)">
+					
+						<g id="Rectangle-Copy" transform="translate(15.031702, 18.493155) scale(1, -1) rotate(-60.000000) translate(-15.031702, -18.493155) ">
+						<g>
+							
+								<linearGradient id="path-2_3_" gradientUnits="userSpaceOnUse" x1="84.233" y1="-38.8174" x2="84.233" y2="-37.8174" gradientTransform="matrix(16.3129 -13.5049 28.2548 7.7971 -234.1566 1456.6202)">
+								<stop  offset="0" style="stop-color:#FDEB86"/>
+								<stop  offset="1" style="stop-color:#F9724E"/>
+							</linearGradient>
+							<polygon id="path-2" class="st1" points="26.8,16.5 59.5,16.4 59.4,30.9 35.8,32 							"/>
+						</g>
+						<g class="st2">
+							<polygon id="path-2_4_" points="26.8,16.5 59.5,16.4 59.4,30.9 35.8,32 							"/>
+						</g>
+						<g>
+							<polygon id="path-2_2_" class="st3" points="26.8,16.5 59.5,16.4 59.4,30.9 35.8,32 							"/>
+						</g>
+					</g>
+					
+						<g id="Rectangle-Copy-2" transform="translate(43.009980, 18.493155) scale(1, -1) rotate(-120.000000) translate(-43.009980, -18.493155) ">
+						<g>
+							
+								<linearGradient id="path-4_3_" gradientUnits="userSpaceOnUse" x1="140.3418" y1="24.3869" x2="140.3418" y2="23.3869" gradientTransform="matrix(-16.3129 -13.5049 28.2548 -7.7971 1652.4666 2123.3491)">
+								<stop  offset="0" style="stop-color:#FDEB86"/>
+								<stop  offset="1" style="stop-color:#F9724E"/>
+							</linearGradient>
+							<polygon id="path-4" class="st4" points="44.8,37.9 68.4,39 68.4,53.5 35.8,53.4 							"/>
+						</g>
+						<g class="st5">
+							<polygon id="path-4_4_" points="44.8,37.9 68.4,39 68.4,53.5 35.8,53.4 							"/>
+						</g>
+						<g>
+							<polygon id="path-4_2_" class="st3" points="44.8,37.9 68.4,39 68.4,53.5 35.8,53.4 							"/>
+						</g>
+					</g>
+					<g id="Rectangle">
+						<g>
+							
+								<linearGradient id="path-7_3_" gradientUnits="userSpaceOnUse" x1="-0.3806" y1="105.8787" x2="-0.3806" y2="106.8787" gradientTransform="matrix(39.7571 0 0 -39.9157 63.2166 4310.3853)">
+								<stop  offset="0" style="stop-color:#D763FF"/>
+								<stop  offset="1" style="stop-color:#8B64FA"/>
+							</linearGradient>
+							<path id="path-7" class="st6" d="M48.1,44.3L48.1,44.3c11,0,19.9,8.9,19.9,19.9v0.2c0,11-8.9,19.9-19.9,19.9l0,0
+								c-11,0-19.9-8.9-19.9-19.9v-0.2C28.2,53.2,37.1,44.3,48.1,44.3z"/>
+						</g>
+						<g class="st7">
+							<path id="path-7_4_" d="M48.1,44.3L48.1,44.3c11,0,19.9,8.9,19.9,19.9v0.2c0,11-8.9,19.9-19.9,19.9l0,0
+								c-11,0-19.9-8.9-19.9-19.9v-0.2C28.2,53.2,37.1,44.3,48.1,44.3z"/>
+						</g>
+						<g>
+							<path id="path-7_2_" class="st3" d="M48.1,44.3L48.1,44.3c11,0,19.9,8.9,19.9,19.9v0.2c0,11-8.9,19.9-19.9,19.9l0,0
+								c-11,0-19.9-8.9-19.9-19.9v-0.2C28.2,53.2,37.1,44.3,48.1,44.3z"/>
+						</g>
+					</g>
+					<g id="Star">
+						<g>
+							
+								<linearGradient id="path-10_3_" gradientUnits="userSpaceOnUse" x1="5.383926e-02" y1="106.3165" x2="5.383926e-02" y2="105.3165" gradientTransform="matrix(20.2892 0 0 -19.2962 46.9934 2105.7104)">
+								<stop  offset="0" style="stop-color:#FDEB86"/>
+								<stop  offset="1" style="stop-color:#F9724E"/>
+							</linearGradient>
+							<polygon id="path-10" class="st8" points="48.1,70.2 41.8,73.5 43,66.5 37.9,61.6 45,60.6 48.1,54.2 51.2,60.6 58.2,61.6 
+								53.2,66.5 54.4,73.5 							"/>
+						</g>
+						<g class="st9">
+							<polygon id="path-10_4_" points="48.1,70.2 41.8,73.5 43,66.5 37.9,61.6 45,60.6 48.1,54.2 51.2,60.6 58.2,61.6 53.2,66.5 
+								54.4,73.5 							"/>
+						</g>
+						<g>
+							<polygon id="path-10_2_" class="st3" points="48.1,70.2 41.8,73.5 43,66.5 37.9,61.6 45,60.6 48.1,54.2 51.2,60.6 58.2,61.6 
+								53.2,66.5 54.4,73.5 							"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

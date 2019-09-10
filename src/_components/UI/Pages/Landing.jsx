@@ -2,9 +2,20 @@ import React from "react";
 import {UiNavBar} from "../Common/UiNavBar";
 import {UiFooter} from "../Common/UiFooter";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
-import {InstrumentIcon} from "../Common/SvgIcons";
+import {
+    MenuIconConfigs,
+    MenuIconCustomers,
+    MenuIconDeals,
+    MenuIconLoyalty,
+    MenuIconMerchants,
+    MenuIconNotifications,
+    MenuIconReports,
+    MenuIconStore,
+    MenuIconTransactions,
+    MenuIconUsers,
+    MenuIconWorkflows
+} from "../Common/SvgIcons";
 import {UiMainWrap, UiTitleWr} from "../Common/UiMainWrap";
-import {ButtonDelete} from "../OverrideMui/ButtonTypes";
 
 export default function Dashboard() {
 
@@ -13,44 +24,48 @@ export default function Dashboard() {
             <UiNavBar username="Admin">
                 {/*<h1>NAVIGATION</h1>*/}
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Instruments"
+                    iconUrl={<MenuIconStore/>}
+                    tileTitle="Stores"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="BINs"
+                    iconUrl={<MenuIconLoyalty/>}
+                    tileTitle="Loyalty"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Instrument Provisioning"
+                    iconUrl={<MenuIconDeals/>}
+                    tileTitle="Deals"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Issued Instruments"
+                    iconUrl={<MenuIconNotifications/>}
+                    tileTitle="Notifications"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Manufacturers"
+                    iconUrl={<MenuIconCustomers/>}
+                    tileTitle="Customers"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Fraud Alerts"
+                    iconUrl={<MenuIconReports/>}
+                    tileTitle="Reports"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Fraud Rules"
+                    iconUrl={<MenuIconTransactions/>}
+                    tileTitle="Transaction"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Devices"
+                    iconUrl={<MenuIconConfigs/>}
+                    tileTitle="System Configs"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Security"
+                    iconUrl={<MenuIconWorkflows/>}
+                    tileTitle="Workflows"
                     tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
-                    iconUrl={<InstrumentIcon/>}
-                    tileTitle="Products"
+                    iconUrl={<MenuIconUsers/>}
+                    tileTitle="Users"
+                    tileDesc="Add or manage your users"/>
+                <UiNavMenuItem
+                    iconUrl={<MenuIconMerchants/>}
+                    tileTitle="Merchants"
                     tileDesc="Add or manage your users"/>
             </UiNavBar>
 
