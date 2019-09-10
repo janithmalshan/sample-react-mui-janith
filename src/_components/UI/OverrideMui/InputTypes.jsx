@@ -129,6 +129,7 @@ const InputDefault = (props) => {
             placeholder={props.placeholder}
             multiline={props.multiline}
             rowsMax="20"
+            onChange={props.onChange}
         />
     );
 };
