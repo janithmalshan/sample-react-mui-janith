@@ -56,44 +56,40 @@ const useStyles = makeStyles({
     },
 });
 
-export const InputAuth = (props) => {
+const InputAuth = (props) => {
 
     const classes = useStyles();
     return (
-
-        <div>
-            <TextField
-                className={'testInput'}
-                InputLabelProps={{
-                    classes: {
-                        root: classes.cssLabel,
-                        focused: classes.cssFocused,
-                        shrink: classes.cssShrink,
-                    },
-                }}
-                InputProps={{
-                    classes: {
-                        root: classes.cssOutlinedInput,
-                        focused: classes.cssFocused,
-                        notchedOutline: classes.notchedOutline,
-                    },
-                }}
-                variant="outlined"
-                margin="normal"
-                required={props.required}
-                fullWidth
-                id={props.id}
-                label={props.label}
-                name={props.name}
-                autoComplete={props.autoComplete}
-                type={props.type}
-                helperText={props.helperText}
-                error={props.error}
-                onChange={props.onChange}
-                // autoFocus
-            />
-        </div>
-
+        <TextField
+            className={'testInput'}
+            InputLabelProps={{
+                classes: {
+                    root: classes.cssLabel,
+                    focused: classes.cssFocused,
+                    shrink: classes.cssShrink,
+                },
+            }}
+            InputProps={{
+                classes: {
+                    root: classes.cssOutlinedInput,
+                    focused: classes.cssFocused,
+                    notchedOutline: classes.notchedOutline,
+                },
+            }}
+            variant="outlined"
+            margin="normal"
+            required={props.required}
+            fullWidth
+            id={props.id}
+            label={props.label}
+            name={props.name}
+            autoComplete={props.autoComplete}
+            type={props.type}
+            helperText={props.helperText}
+            error={props.error}
+            onChange={props.onChange}
+            // autoFocus
+        />
     );
 };
 
@@ -183,8 +179,8 @@ const RadioDefault = (props) => {
 };
 
 export {InputDefault};
-export {InputAuth}
-export {SelectDefault}
-export {OptionDefault}
-export {CheckboxDefault}
-export {RadioDefault}
+export {InputAuth};
+export {SelectDefault};
+export {OptionDefault};
+export {CheckboxDefault};
+export {RadioDefault};
