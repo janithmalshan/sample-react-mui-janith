@@ -34,6 +34,8 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import UiTableGrid from "./Container/TableGrid";
 import {UiTab, UiTabs} from "./Common/UiTabs";
 import {UiDialog, UiDialogConfirm} from "./Common/UIDialog";
+import {UiTreeView} from "./Common/UiTreeView";
+import TreeItem from '@material-ui/lab/TreeItem';
 
 export default function SignInSide() {
 
@@ -278,7 +280,24 @@ export default function SignInSide() {
                 </UiPaper>
 
                 <UiTableGrid/>
+
+                <UiTreeView>
+                    <TreeItem nodeId="1" label="Applications">
+                        <TreeItem nodeId="2" label="Calendar"/>
+                        <TreeItem nodeId="3" label="Chrome"/>
+                        <TreeItem nodeId="4" label="123456"/>
+                    </TreeItem>
+                    <TreeItem nodeId="5" label="Documents">
+                        <TreeItem nodeId="6" label="Material-UI">
+                            <TreeItem nodeId="7" label="src">
+                                <TreeItem nodeId="8" label="index.js"/>
+                                <TreeItem nodeId="9" label="tree-view.js"/>
+                            </TreeItem>
+                        </TreeItem>
+                    </TreeItem>
+                </UiTreeView>
             </UiMainWrap>
+
             <ButtonAuth
                 fullWidth
                 variant="contained"

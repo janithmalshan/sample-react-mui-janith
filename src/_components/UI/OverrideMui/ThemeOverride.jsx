@@ -243,6 +243,27 @@ const ThemeDefault = createMuiTheme({
             labelContainer: {
                 padding: 0,
             }
+        },
+        MuiTreeView: {
+            root: {
+                // color: variables.primaryTextColor,
+                border: '0px solid',
+                borderRadius: 10,
+                fontSize: '18px'
+            }
+        },
+        MuiTreeItem: {
+            root: {
+                border: '1px solid',
+                borderColor: variables.borderColor,
+            },
+            content: {
+                padding: '0px 0',
+            },
+            label: {
+                padding: '15px 0',
+                color: variables.secondaryTextColor,
+            }
         }
     },
 });

@@ -13,16 +13,18 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.3.0",
+    "@material-ui/lab": "^4.0.0-alpha.26",
+    "@material-ui/styles": "latest",
     "history": "^4.6.3",
+    "prop-types": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.2",
+    "react-spring": "^8.0.27",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0",
-    "@material-ui/styles": "latest",
-    "prop-types": "latest"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
