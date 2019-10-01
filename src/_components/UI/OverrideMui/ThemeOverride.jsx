@@ -248,20 +248,37 @@ const ThemeDefault = createMuiTheme({
             root: {
                 // color: variables.primaryTextColor,
                 border: '0px solid',
-                borderRadius: 10,
-                fontSize: '18px'
+                borderColor: variables.borderColor,
+                borderRadius: 10
             }
         },
         MuiTreeItem: {
             root: {
-                border: '1px solid',
-                borderColor: variables.borderColor,
+                margin: '10px 0'
+            },
+            expanded: {
+
+                // '& content': {
+                //     border: '1px solid',
+                //     borderColor: '#ff0099',
+                //     padding: '0px 0',
+                //     borderRadius: 4
+                // },
+            },
+            group: {
+                marginLeft: 10
             },
             content: {
+                border: '1px solid',
+                borderColor: variables.secondaryTextColor,
                 padding: '0px 0',
+                borderRadius: 4
+            },
+            iconContainer: {
+                padding: '5px'
             },
             label: {
-                padding: '15px 0',
+                padding: '15px 10px',
                 color: variables.secondaryTextColor,
             }
         }

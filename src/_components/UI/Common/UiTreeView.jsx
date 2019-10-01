@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import TreeView from '@material-ui/lab/TreeView';
 import TreeItem from '@material-ui/lab/TreeItem';
 import SvgIcon from '@material-ui/core/SvgIcon';
+import {CheckboxDefault} from "../OverrideMui/InputTypes";
+import TableCell from "@material-ui/core/TableCell";
 
 function ExpandMoreIcon(props) {
     return (
@@ -22,52 +24,91 @@ function ChevronRightIcon(props) {
     );
 }
 
-// const useStyles = makeStyles({
-//     root: {
-//         height: 216,
-//         flexGrow: 1,
-//         maxWidth: 400,
-//     },
-// });
-
 export const UiTreeView  = (props) => {
     // const classes = useStyles();
 
     return (
         <TreeView
-            // className={classes.root}
+            className="ui-tree"
             defaultCollapseIcon={<ExpandMoreIcon />}
             defaultExpandIcon={<ChevronRightIcon />}
             {...props}
-        >
-            {/*<TreeItem nodeId="1" label="Applications">
-                <TreeItem nodeId="2" label="Calendar"/>
-                <TreeItem nodeId="3" label="Chrome"/>
-                <TreeItem nodeId="4" label="Webstorm"/>
-            </TreeItem>
-            <TreeItem nodeId="5" label="Documents">
-                <TreeItem nodeId="6" label="Material-UI">
-                    <TreeItem nodeId="7" label="src">
-                        <TreeItem nodeId="8" label="index.js"/>
-                        <TreeItem nodeId="9" label="tree-view.js"/>
-                    </TreeItem>
-                </TreeItem>
-            </TreeItem>*/}
-        </TreeView>
+        />
     );
 };
 
-export const UiTreeItem  = (props) => {
-    // const classes = useStyles();
+const useTreeItemStyles  = makeStyles(theme => ({
+    root: {
+        color: theme.palette.text.secondary,
+        '&:focus > $content': {
+            backgroundColor: `var(--tree-view-bg-color, ${theme.palette.grey[400]})`,
+            color: 'var(--tree-view-color)',
+        },
+    },
+    // content: {
+    //     color: theme.palette.text.secondary,
+    //     borderTopRightRadius: theme.spacing(2),
+    //     borderBottomRightRadius: theme.spacing(2),
+    //     paddingRight: theme.spacing(1),
+    //     fontWeight: theme.typography.fontWeightMedium,
+    //     '$expanded > &': {
+    //         fontWeight: theme.typography.fontWeightRegular,
+    //     },
+    // },
+    // group: {
+    //     marginLeft: 0,
+    //     '& $content': {
+    //         paddingLeft: theme.spacing(2),
+    //     },
+    // },
+    // expanded: {},
+    // label: {
+    //     fontWeight: 'inherit',
+    //     color: 'inherit',
+    // },
+    // labelRoot: {
+    //     display: 'flex',
+    //     alignItems: 'center',
+    //     padding: theme.spacing(0.5, 0),
+    // },
+    // labelIcon: {
+    //     marginRight: theme.spacing(1),
+    //     width: "24px",
+    //     height: "24px"
+    // },
+    // labelText: {
+    //     fontWeight: 'inherit',
+    //     flexGrow: 1,
+    // },
+}));
+
+export function UiTreeItem (props) {
+    const { labelText, labelIcon, labelInfo, color, bgColor, ...other } = props;
 
     return (
-        <div>
-            <h1>name</h1>
-        </div>
+        <TreeItem
+            label={
+                <div className="ui-tree">
+                    <img src={labelIcon} className="ui-tree__icon" />
+                    <p className="ui-tree__label">
+                        {labelText}
+                    </p>
+                    <CheckboxDefault
+                        checked={true}
+                        className="f-right clr-bth"/>
+                </div>
+            }
+            // classes={{
+            //     root: classes.root,
+            //     content: classes.content,
+            //     expanded: classes.expanded,
+            //     group: classes.group,
+            //     label: classes.label,
+            // }}
+            {...other}
+        />
     );
 }
-
-
 
 
 

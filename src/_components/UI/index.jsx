@@ -34,8 +34,9 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import UiTableGrid from "./Container/TableGrid";
 import {UiTab, UiTabs} from "./Common/UiTabs";
 import {UiDialog, UiDialogConfirm} from "./Common/UIDialog";
-import {UiTreeView} from "./Common/UiTreeView";
+import {UiTreeItem, UiTreeView} from "./Common/UiTreeView";
 import TreeItem from '@material-ui/lab/TreeItem';
+import IconTree from "../../../styles/img/ic_menu_store.svg"
 
 export default function SignInSide() {
 
@@ -282,11 +283,11 @@ export default function SignInSide() {
                 <UiTableGrid/>
 
                 <UiTreeView>
-                    <TreeItem nodeId="1" label="Applications">
-                        <TreeItem nodeId="2" label="Calendar"/>
-                        <TreeItem nodeId="3" label="Chrome"/>
-                        <TreeItem nodeId="4" label="123456"/>
-                    </TreeItem>
+                    <UiTreeItem nodeId="1"  labelText="All Mail" labelIcon={IconTree}>
+                        <UiTreeItem nodeId="2" labelText="Calendar"/>
+                        <UiTreeItem nodeId="3" labelText="Chrome"/>
+                        <UiTreeItem nodeId="4" labelText="123456"/>
+                    </UiTreeItem>
                     <TreeItem nodeId="5" label="Documents">
                         <TreeItem nodeId="6" label="Material-UI">
                             <TreeItem nodeId="7" label="src">
