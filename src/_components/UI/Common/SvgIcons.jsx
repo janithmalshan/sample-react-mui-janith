@@ -163,3 +163,17 @@ export const MenuIconMerchants = () => {
         <img src={IconMerchants} className={classes.rootSvgNavMenuIcon}/>
     );
 };
+export const TreeIconClose = () => {
+    return (
+        <svg width="11" height="8" viewBox="0 0 11 8">
+            <path fill="none" fillRule="evenodd" stroke="#6764FF" strokeWidth="2" d="M1 7.4L5.5 2 10 7.4"/>
+        </svg>
+    );
+};
+export const TreeIconOpen = () => {
+    return (
+        <svg width="11" height="8" viewBox="0 0 11 8">
+            <path fill="none" fillRule="evenodd" stroke="#8C95A8" strokeWidth="2" d="M10 1L5.5 6.4 1 1"/>
+        </svg>
+    );
+};

@@ -36,7 +36,9 @@ import {UiTab, UiTabs} from "./Common/UiTabs";
 import {UiDialog, UiDialogConfirm} from "./Common/UIDialog";
 import {UiTreeItem, UiTreeView} from "./Common/UiTreeView";
 import TreeItem from '@material-ui/lab/TreeItem';
-import IconTree from "../../../styles/img/ic_menu_store.svg"
+import IconTreePackage from "../../../styles/img/ic_tree_package.svg"
+import IconTreeModule from "../../../styles/img/ic_tree_module.svg"
+import IconTreeLayout from "../../../styles/img/ic_tree_layout.svg"
 
 export default function SignInSide() {
 
@@ -283,19 +285,21 @@ export default function SignInSide() {
                 <UiTableGrid/>
 
                 <UiTreeView>
-                    <UiTreeItem nodeId="1"  labelText="All Mail" labelIcon={IconTree}>
-                        <UiTreeItem nodeId="2" labelText="Calendar"/>
-                        <UiTreeItem nodeId="3" labelText="Chrome"/>
-                        <UiTreeItem nodeId="4" labelText="123456"/>
+                    <UiTreeItem nodeId="1" labelText="All Mail" labelIcon={IconTreePackage}>
+                        <UiTreeItem nodeId="2" labelText="Calendar" labelIcon={IconTreeModule}/>
+                        <UiTreeItem nodeId="3" labelText="Chrome" labelIcon={IconTreeModule}/>
+                        <UiTreeItem nodeId="4" labelText="123456" labelIcon={IconTreeModule}/>
                     </UiTreeItem>
-                    <TreeItem nodeId="5" label="Documents">
-                        <TreeItem nodeId="6" label="Material-UI">
-                            <TreeItem nodeId="7" label="src">
-                                <TreeItem nodeId="8" label="index.js"/>
-                                <TreeItem nodeId="9" label="tree-view.js"/>
-                            </TreeItem>
-                        </TreeItem>
-                    </TreeItem>
+                    <UiTreeItem nodeId="5" labelText="Documents" labelIcon={IconTreePackage}>
+                        <UiTreeItem nodeId="7" labelText="src" labelIcon={IconTreeModule}>
+                            <UiTreeItem nodeId="8" labelText="index.js" labelIcon={IconTreeLayout}/>
+                            <UiTreeItem nodeId="9" labelText="tree-view.js" labelIcon={IconTreeLayout}/>
+                        </UiTreeItem>
+                        <UiTreeItem nodeId="6" labelText="Material-UI" labelIcon={IconTreeModule}>
+                            <UiTreeItem nodeId="8" labelText="index.js" labelIcon={IconTreeLayout}/>
+                            <UiTreeItem nodeId="9" labelText="tree-view.js" labelIcon={IconTreeLayout}/>
+                        </UiTreeItem>
+                    </UiTreeItem>
                 </UiTreeView>
             </UiMainWrap>
 

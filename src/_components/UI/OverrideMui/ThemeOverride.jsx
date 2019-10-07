@@ -246,15 +246,12 @@ const ThemeDefault = createMuiTheme({
         },
         MuiTreeView: {
             root: {
-                // color: variables.primaryTextColor,
                 border: '0px solid',
-                borderColor: variables.borderColor,
-                borderRadius: 10
             }
         },
         MuiTreeItem: {
             root: {
-                margin: '10px 0'
+                margin: '5px 0'
             },
             expanded: {
 
@@ -266,19 +263,21 @@ const ThemeDefault = createMuiTheme({
                 // },
             },
             group: {
-                marginLeft: 10
+                marginLeft: 16
             },
             content: {
                 border: '1px solid',
-                borderColor: variables.secondaryTextColor,
                 padding: '0px 0',
-                borderRadius: 4
+                borderColor: '#eef0f2',
+                borderRadius: 4,
+                height: '59px',
+                boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)'
             },
             iconContainer: {
                 padding: '5px'
             },
             label: {
-                padding: '15px 10px',
+                padding: '0 10px',
                 color: variables.secondaryTextColor,
             }
         }

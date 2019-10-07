@@ -3,24 +3,27 @@
   background-color: rgba(255, 255, 255, 0);
   &__label {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
+    line-height: 1.21;
     letter-spacing: normal;
+    color: #404553;
     padding: 0;
     margin: 0;
     display: inline-block;
   }
   &__icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    margin-right: 18px;
+    //height: 30px;
     display: inline-block;
     vertical-align: middle;
   }
   .Mui-expanded {
     //background-color: #f2bdf9;
     >.MuiTreeItem-content {
-      background-color: #f2bd49;
+      border-color: #6764ff;
     }
   }
 }
