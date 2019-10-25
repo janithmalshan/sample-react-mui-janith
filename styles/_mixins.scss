@@ -22,7 +22,10 @@
 .t-left {text-align: left}
 .t-right {text-align: right}
 .t-bold {font-weight: 600;}
+.t-center {text-align: center}
 
+.margin-ex {margin: 20px 0 0 0}
+.margin-ex-d {margin: 40px 0 0 0}
 // -- Breakpoints
 @mixin breakpoint-sm {
 	@media (max-width: #{$break-sm}) {

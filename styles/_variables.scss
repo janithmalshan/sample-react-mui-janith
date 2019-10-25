@@ -33,7 +33,7 @@ $main-nav: 70px;
 $main-footer: 72px;
 $menu-max-width: 1246px;
 $main-content-min-height: calc(100vh - #{$main-nav + $main-footer });
-$menu-height: $main-content-min-height;
+$menu-height: calc(100vh - #{$main-nav});
 $main-content-max-width: 1200px;
 $padding-h-form: 25px;
 

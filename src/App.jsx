@@ -7,6 +7,8 @@ import Dashboard from './_components/UI/Pages/Landing';
 import Datagrid from './_components/UI/Pages/DataGrid';
 import Detail from './_components/UI/Pages/DetailView';
 import Modify from './_components/UI/Pages/ModifyView';
+import Forgot from './_components/UI/Pages/ForgotPassword';
+import ChooseNew from './_components/UI/Pages/ChooseNewPassword';
 
 import {history} from './_helpers';
 import {alertActions} from './_actions';
@@ -50,6 +52,8 @@ class App extends React.Component {
                             {/*Pages before the login should be inside here*/}
                             <Route path="/login" component={SignInSide}/>
                             <Route path="/register" component={RegisterPage}/>
+                            <Route path="/forgot" component={Forgot}/>
+                            <Route path="/newpw" component={ChooseNew}/>
                         </ThemeProvider>
                     </div>
                 </Router>
