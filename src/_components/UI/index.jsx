@@ -86,6 +86,8 @@ export default function SignInSide() {
                     <ButtonDelete><a href={"/datagrid"}>datagrid</a></ButtonDelete>
                     <ButtonDelete><a href={"/detail"}>detail view</a></ButtonDelete>
                     <ButtonDelete><a href={"/modify"}>modify view</a></ButtonDelete>
+                    <ButtonDelete><a href={"/forgot"}>forgot password</a></ButtonDelete>
+                    <ButtonDelete><a href={"/newpw"}>new password</a></ButtonDelete>
                 </div>
 
                 <div className="block ui-action-wr">

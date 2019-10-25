@@ -73,6 +73,18 @@
   }
 }
 
+.pw-reset-t {
+  font-size: 18px;
+  color: #404553;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 17px;
+  margin: 0 -100px;
+  &__highlight {
+    color: $primary;
+  }
+}
+
 .pw-reset-criteria {
   //font-family: 'Gelion-Bold';
   font-size: 15px;

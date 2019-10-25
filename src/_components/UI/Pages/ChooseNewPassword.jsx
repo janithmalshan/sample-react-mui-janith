@@ -1,21 +1,22 @@
 import React, {Fragment} from 'react';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 // import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import SignInLeft from "../Container/SignInLeft";
-import {UiActionWrBottom, UiPaper} from "../Common/UiMainWrap";
-import {UiField, UiFieldSingleWr} from "../Common/UiFormElements";
-import {InputAuth, InputDefault} from "../OverrideMui/InputTypes";
-import {ButtonAuth, ButtonDefault} from "../OverrideMui/ButtonTypes";
+import {InputAuth} from "../OverrideMui/InputTypes";
+import {ButtonAuth} from "../OverrideMui/ButtonTypes";
+import {MsgResetSuccess} from "../Common/UiMessageContent";
 
 export default function Forgot() {
 
     return (
         <Grid container component="main" className="ui-auth-main">
-            <Grid container item component={Paper} elevation={6} square>
+            <Grid container
+                  spacing={0}
+                  direction="column"
+                  justify="center"
+                  className="overflow">
                 <Fragment>
 
-                    <UiPaper>
+                    <Grid className="ui-auth-main-right">
                         <h1 className="header-txt t-center">
                             Choose a New Password
                         </h1>
@@ -64,7 +65,8 @@ export default function Forgot() {
                             </ButtonAuth>
 
                         </form>
-                    </UiPaper>
+                    </Grid>
+                    <MsgResetSuccess/>
                 </Fragment>
             </Grid>
         </Grid>
