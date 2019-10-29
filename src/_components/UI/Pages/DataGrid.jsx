@@ -28,7 +28,7 @@ export default function DataGrid() {
                         className="f-right"><BtnIconAdd className="ui-btn-icon"/>Add New</ButtonDefault>
                 </UiTitleWr>
                 <UiActionWrTop>
-                    <InputDefault className="ui-title f-left"/>
+                    <InputDefault className="ui-x f-left"/>
                     <ButtonSelect className="f-right ui-btn-sm">Select</ButtonSelect>
                     <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
                 </UiActionWrTop>
