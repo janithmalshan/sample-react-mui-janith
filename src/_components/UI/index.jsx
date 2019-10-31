@@ -78,8 +78,7 @@ export default function SignInSide() {
         <Grid component="main">
             <SignInLeft/>
             <UiMainWrap>
-                
-                
+
                 <div className="block ui-action-wr">
                     <ButtonDelete><a href={"/login"}>login</a></ButtonDelete>
                     <ButtonDelete><a href={"/register"}>register</a></ButtonDelete>
