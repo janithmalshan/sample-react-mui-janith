@@ -5,11 +5,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Icon from "@material-ui/core/Icon";
-import variables from '../../../../styles/_variables.scss';
 
-const useStyles = makeStyles({
-   
-});
+const useStyles = makeStyles({});
 
 export const UiSubNavMenuItem = (props) => {
     const classes = useStyles();
