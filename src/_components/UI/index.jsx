@@ -194,12 +194,13 @@ export default function SignInSide() {
                 <UiPaper>
                     <UiFormTitle formtitle="Modify BIN"/>
                     <UiFieldSingleWr>
-                        <UiField fieldtitle="Issuer/ Agregator">
+                        <UiField fieldtitle="Issuer/ Agregator" required>
                             <InputDefault
+                                required
                                 id="email"
-                                name="email"
+                                name="email"                                
                                 placeholder="Multi Line Input Placeholder"
-                                multiline
+                                multiline                                                    
                             />
                         </UiField>
                     </UiFieldSingleWr>

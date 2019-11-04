@@ -29,13 +29,21 @@ export const UiFieldMultipleWr = (props) => {
 };
 
 export const UiField = (props) => {
-
-    return (
-        <div className="ui-field">
-            <UiFieldLabel>{props.fieldtitle}</UiFieldLabel>
-            <div {...props}/>
-        </div>
-    );
+    if(props.required){
+        return (
+            <div className="ui-field">
+                <UiFieldLabel>{props.fieldtitle} <span className="ui-field__required-star">*</span> </UiFieldLabel>
+                <div {...props}/>
+            </div>
+        );   
+    }else{
+        return (
+            <div className="ui-field">
+                <UiFieldLabel>{props.fieldtitle}</UiFieldLabel>
+                <div {...props}/>
+            </div>
+        );
+    }    
 };
 
 const UiFieldLabel = (props) => {

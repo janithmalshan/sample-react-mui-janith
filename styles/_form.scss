@@ -49,6 +49,10 @@
   .ui-radio svg {
     font-size: 20px;
   }
+  &__required-star{
+    color: red;
+    vertical-align: text-top;
+  }
 }
 .ui-field-single {
   margin-bottom: 26px;
