@@ -177,3 +177,10 @@ export const TreeIconOpen = () => {
         </svg>
     );
 };
+export const MenuIconPlus = () => {
+    return (
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.1666 10.1666H10.1666V17.1666H7.83325V10.1666H0.833252V7.83325H7.83325V0.833252H10.1666V7.83325H17.1666V10.1666Z" fill="#8E8E93"/>
+        </svg>  
+    );
+};

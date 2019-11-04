@@ -21,7 +21,14 @@
   &:last-of-type{
     margin: 0;
   }
-  .ui-input {width: 100%}
+  .ui-input {
+    width: 100%;      
+    .MuiFormHelperText-root.Mui-error{
+      height: 0px;
+      min-height: 0px;
+      overflow: visible;
+    }
+  }
   &__label {
     font-size: 12px;
     font-weight: 500;
@@ -48,6 +55,10 @@
   }
   .ui-radio svg {
     font-size: 20px;
+  }
+  &__required-star{
+    color: red;
+    vertical-align: text-top;
   }
 }
 .ui-field-single {
