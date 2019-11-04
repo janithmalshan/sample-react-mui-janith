@@ -129,6 +129,11 @@ const ThemeDefault = createMuiTheme({
                 backgroundColor: "aqua",
             }
         },
+        MuiTableRow: {
+            root: {
+                backgroundColor: '#ffffff'
+            }
+        },
         MuiTableCell: {
             root: {
                 fontSize: '14px',
@@ -136,7 +141,6 @@ const ThemeDefault = createMuiTheme({
                 color: variables.primaryTextColor,
                 paddingTop: '0',
                 paddingBottom: '0',
-                backgroundColor: '#ffffff'
             },
             head: {
                 borderColor: "#eef0f2",
