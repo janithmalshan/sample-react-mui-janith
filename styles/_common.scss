@@ -12,6 +12,20 @@
     }
     .ui-action-wr {
       padding: 6px 0 8px;
+      > button, a {
+        margin-right: 30px;
+        vertical-align: bottom;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .ui-img-btn {
+        min-width: 190px;
+      }
+      .ui-btn-sm {
+        margin-right: 0;
+        margin-left: 10px;
+      }
     }
   }
   &-paper {
@@ -50,21 +64,28 @@
   margin: -2px 9px 0 0;
 }
 
-.ui-action-wr {
-  > button {
-    margin-right: 30px;
-    vertical-align: bottom;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .ui-img-btn {
-    min-width: 190px;
-  }
-  .ui-btn-sm {
-    margin-right: 0;
-    margin-left: 10px;
-  }
+//.ui-action-wr {
+//  > button, a {
+//    margin-right: 30px;
+//    vertical-align: bottom;
+//    &:last-child {
+//      margin-right: 0;
+//    }
+//  }
+//  .ui-img-btn {
+//    min-width: 190px;
+//  }
+//  .ui-btn-sm {
+//    margin-right: 0;
+//    margin-left: 10px;
+//  }
+//}
+.ui-progress-bar {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 .ui-progress-bar {
   position: fixed;

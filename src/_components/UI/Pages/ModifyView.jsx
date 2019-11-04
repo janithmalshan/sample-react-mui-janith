@@ -121,7 +121,7 @@ export default function DetailView() {
                     </UiFieldSingleWr>
                 </UiPaper>
                 <UiActionWrBottom>
-                    <ButtonDefault variant="outlined" color="primary">Cancel</ButtonDefault>
+                    <a><ButtonDefault variant="outlined" color="primary">Cancel</ButtonDefault></a>
                     <ButtonDefault variant="contained" color="primary">Save</ButtonDefault>
                 </UiActionWrBottom>
             </UiMainWrap>
