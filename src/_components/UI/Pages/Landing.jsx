@@ -2,6 +2,7 @@ import React from "react";
 import {UiNavBar} from "../Common/UiNavBar";
 import {UiFooter} from "../Common/UiFooter";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
+import {UiSubNavMenuItem} from "../Common/UiSubNavMenuItem";
 import {
     MenuIconConfigs,
     MenuIconCustomers,
@@ -13,7 +14,8 @@ import {
     MenuIconStore,
     MenuIconTransactions,
     MenuIconUsers,
-    MenuIconWorkflows
+    MenuIconWorkflows,
+    MenuIconPlus
 } from "../Common/SvgIcons";
 import {UiMainWrap, UiTitleWr} from "../Common/UiMainWrap";
 
@@ -23,6 +25,11 @@ export default function Dashboard() {
         <div>
             <UiNavBar username="Admin">
                 {/*<h1>NAVIGATION</h1>*/}
+                <UiSubNavMenuItem
+                    count="99,999"
+                    iconUrl={<MenuIconPlus/>}
+                    tileTitle="My Users"
+                    tileDesc="Add or manage your users"/>
                 <UiNavMenuItem
                     iconUrl={<MenuIconStore/>}
                     tileTitle="Stores"

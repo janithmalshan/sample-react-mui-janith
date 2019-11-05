@@ -111,7 +111,7 @@ const InputDefault = (props) => {
                     focused: classes.cssFocused,
                     notchedOutline: classes.notchedOutline,
                 },
-            }}
+            }}        
             variant="outlined"
             margin="none"
             required={props.required}
