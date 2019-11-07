@@ -1,4 +1,5 @@
 import React from "react";
+import UiCustomMoreButton from "./UiCustomMoreButton";
 
 export const UiFormWr = (props) => {
 
@@ -10,7 +11,14 @@ export const UiFormWr = (props) => {
 export const UiFormTitle = (props) => {
 
     return (
-        <div className="ui-form__title">{props.formtitle}</div>
+        <div className="ui-form__title">{props.formtitle}
+            <div className="ui-button__more_wrap">
+                <UiCustomMoreButton
+                    className="ui-button__more"
+                    items={['one','two','three']}
+                />
+            </div>
+        </div>
     );
 };
 
@@ -29,21 +37,21 @@ export const UiFieldMultipleWr = (props) => {
 };
 
 export const UiField = (props) => {
-    if(props.required){
+    if (props.required) {
         return (
             <div className="ui-field">
                 <UiFieldLabel>{props.fieldtitle} <span className="ui-field__required-star">*</span> </UiFieldLabel>
                 <div {...props}/>
             </div>
-        );   
-    }else{
+        );
+    } else {
         return (
             <div className="ui-field">
                 <UiFieldLabel>{props.fieldtitle}</UiFieldLabel>
                 <div {...props}/>
             </div>
         );
-    }    
+    }
 };
 
 const UiFieldLabel = (props) => {
