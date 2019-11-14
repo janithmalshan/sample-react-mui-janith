@@ -29,6 +29,7 @@ import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "./Common/UiMainW
 import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFieldValue, UiFormTitle} from "./Common/UiFormElements";
 import {
     CheckboxDefault,
+    CheckboxWithInput,
     InputDefault,
     InputWithButton,
     OptionDefault,
@@ -244,6 +245,20 @@ export default function SignInSide() {
                                     label="BT Num"
                                 />
                             </FormGroup>
+                        </UiField>
+                    </UiFieldSingleWr>
+                    <UiFieldSingleWr>
+                        <UiField fieldtitle="Vertical Checkbox">
+                            <div className="ui-field__checkbox-with-input_wrap">
+                                <FormControlLabel
+                                    className="ui-field__checkbox-with-input"
+                                    control={
+                                        <CheckboxDefault/>
+                                    }
+                                    label="Secondary"
+                                />
+                                <InputDefault/>
+                            </div>
                         </UiField>
                     </UiFieldSingleWr>
                     <UiFieldSingleWr>

@@ -53,6 +53,16 @@
   &__checkbox {
     min-width: 112px;
   }
+  &__checkbox-with-input_wrap{
+    .ui-input{
+      width: 80%;
+      float: left;
+    }
+    .ui-field__checkbox-with-input{
+      width: auto;
+      float: left;
+    }
+  }
   .ui-radio svg {
     font-size: 20px;
   }
