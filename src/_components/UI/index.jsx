@@ -27,7 +27,14 @@ import {
 } from "./Common/SvgIcons";
 import {UiActionWrBottom, UiMainWrap, UiPaper, UiTitleWr} from "./Common/UiMainWrap";
 import {UiField, UiFieldMultipleWr, UiFieldSingleWr, UiFieldValue, UiFormTitle} from "./Common/UiFormElements";
-import {CheckboxDefault, InputDefault, OptionDefault, RadioDefault, SelectDefault} from "./OverrideMui/InputTypes";
+import {
+    CheckboxDefault,
+    InputDefault,
+    InputWithButton,
+    OptionDefault,
+    RadioDefault,
+    SelectDefault
+} from "./OverrideMui/InputTypes";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -35,7 +42,6 @@ import UiTableGrid from "./Container/TableGrid";
 import {UiTab, UiTabs} from "./Common/UiTabs";
 import {UiDialog, UiDialogConfirm} from "./Common/UIDialog";
 import {UiTreeItem, UiTreeView} from "./Common/UiTreeView";
-import TreeItem from '@material-ui/lab/TreeItem';
 import IconTreePackage from "../../../styles/img/ic_tree_package.svg"
 import IconTreeModule from "../../../styles/img/ic_tree_module.svg"
 import IconTreeLayout from "../../../styles/img/ic_tree_layout.svg"
@@ -198,9 +204,18 @@ export default function SignInSide() {
                             <InputDefault
                                 required
                                 id="email"
-                                name="email"                                
+                                name="email"
                                 placeholder="Multi Line Input Placeholder"
-                                multiline                                                    
+                                multiline
+                            />
+                        </UiField>
+                    </UiFieldSingleWr>
+                    <UiFieldSingleWr>
+                        <UiField fieldtitle="Generate Key">
+                            <InputWithButton
+                                id="key"
+                                name="key"
+                                placeholder="Placeholder"
                             />
                         </UiField>
                     </UiFieldSingleWr>

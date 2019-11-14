@@ -8,6 +8,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Checkbox from "@material-ui/core/Checkbox";
 import {CheckBoxIcon, CheckBoxOutlineBlankIcon} from "../Common/SvgIcons";
 import Radio from "@material-ui/core/Radio";
+import {ButtonDefault} from "./ButtonTypes";
 
 const useStyles = makeStyles({
     cssLabel: {
@@ -111,7 +112,7 @@ const InputDefault = (props) => {
                     focused: classes.cssFocused,
                     notchedOutline: classes.notchedOutline,
                 },
-            }}        
+            }}
             variant="outlined"
             margin="none"
             required={props.required}
@@ -177,6 +178,48 @@ const RadioDefault = (props) => {
         />
     );
 };
+const InputWithButton = (props) => {
+
+    const classes = useStyles();
+    return (
+        <div className="InputWithButton-wrap">
+            <TextField
+                className={'InputWithButton-txt'}
+                InputLabelProps={{
+                    classes: {
+                        root: classes.cssLabel,
+                        focused: classes.cssFocused,
+                        shrink: classes.cssShrink,
+                    },
+                }}
+                InputProps={{
+                    classes: {
+                        root: classes.cssOutlinedInput,
+                        focused: classes.cssFocused,
+                        notchedOutline: classes.notchedOutline,
+                    },
+                }}
+                variant="outlined"
+                margin="normal"
+                required={props.required}
+                fullWidth
+                id={props.id}
+                label={props.label}
+                name={props.name}
+                autoComplete={props.autoComplete}
+                type={props.type}
+                helperText={props.helperText}
+                error={props.error}
+                onChange={props.onChange}
+                placeholder={props.placeholder}
+                // autoFocus
+            />
+            <ButtonDefault
+                variant="contained"
+                color="primary" className="InputWithButton-btn">Generate</ButtonDefault>
+        </div>
+    );
+};
 
 export {InputDefault};
 export {InputAuth};
@@ -184,3 +227,4 @@ export {SelectDefault};
 export {OptionDefault};
 export {CheckboxDefault};
 export {RadioDefault};
+export {InputWithButton};
