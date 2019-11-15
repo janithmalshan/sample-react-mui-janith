@@ -216,6 +216,7 @@ export default function SignInSide() {
                             <InputWithButton
                                 id="key"
                                 name="key"
+                                buttonText="Generate"
                                 placeholder="Placeholder"
                             />
                         </UiField>

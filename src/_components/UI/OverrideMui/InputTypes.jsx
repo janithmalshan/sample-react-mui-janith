@@ -185,7 +185,7 @@ const InputWithButton = (props) => {
 
     const classes = useStyles();
     return (
-        <div className="InputWithButton-wrap">
+        <div className="ui-input-with-button-wrap">
             <TextField
                 className={'InputWithButton-txt'}
                 InputLabelProps={{
@@ -203,7 +203,7 @@ const InputWithButton = (props) => {
                     },
                 }}
                 variant="outlined"
-                margin="normal"
+                margin="none"
                 required={props.required}
                 fullWidth
                 id={props.id}
@@ -219,7 +219,7 @@ const InputWithButton = (props) => {
             />
             <ButtonDefault
                 variant="contained"
-                color="primary" className="InputWithButton-btn">Generate</ButtonDefault>
+                color="primary" className="ui-input-with-button">{props.buttonText}</ButtonDefault>
         </div>
     );
 };
