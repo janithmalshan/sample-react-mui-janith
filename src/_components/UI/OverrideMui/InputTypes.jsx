@@ -8,6 +8,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Checkbox from "@material-ui/core/Checkbox";
 import {CheckBoxIcon, CheckBoxOutlineBlankIcon} from "../Common/SvgIcons";
 import Radio from "@material-ui/core/Radio";
+import {ButtonDefault} from "./ButtonTypes";
+import InputAdornment from "@material-ui/core/InputAdornment";
+
 
 const useStyles = makeStyles({
     cssLabel: {
@@ -111,7 +114,7 @@ const InputDefault = (props) => {
                     focused: classes.cssFocused,
                     notchedOutline: classes.notchedOutline,
                 },
-            }}        
+            }}
             variant="outlined"
             margin="none"
             required={props.required}
@@ -166,6 +169,7 @@ const CheckboxDefault = (props) => {
     );
 };
 
+
 const RadioDefault = (props) => {
 
     return (
@@ -177,6 +181,94 @@ const RadioDefault = (props) => {
         />
     );
 };
+const InputWithButton = (props) => {
+
+    const classes = useStyles();
+    return (
+        <div className="ui-input-with-button-wrap">
+            <TextField
+                className={'InputWithButton-txt'}
+                InputLabelProps={{
+                    classes: {
+                        root: classes.cssLabel,
+                        focused: classes.cssFocused,
+                        shrink: classes.cssShrink,
+                    },
+                }}
+                InputProps={{
+                    classes: {
+                        root: classes.cssOutlinedInput,
+                        focused: classes.cssFocused,
+                        notchedOutline: classes.notchedOutline,
+                    },
+                }}
+                variant="outlined"
+                margin="none"
+                required={props.required}
+                fullWidth
+                id={props.id}
+                label={props.label}
+                name={props.name}
+                autoComplete={props.autoComplete}
+                type={props.type}
+                helperText={props.helperText}
+                error={props.error}
+                onChange={props.onChange}
+                placeholder={props.placeholder}
+                // autoFocus
+            />
+            <ButtonDefault
+                variant="contained"
+                color="primary" className="ui-input-with-button">{props.buttonText}</ButtonDefault>
+        </div>
+    );
+};
+
+const InputWithIcon = (props) => {
+    const classes = useStyles();
+    return (
+        <TextField
+            className={'ui-input-with-icon'}
+            InputLabelProps={{
+                classes: {
+                    root: classes.cssLabel,
+                    focused: classes.cssFocused,
+                },
+            }}
+            InputProps={{
+                classes: {
+                    root: classes.cssOutlinedInput,
+                    focused: classes.cssFocused,
+                    notchedOutline: classes.notchedOutline,
+                },
+                endAdornment: (
+                    <InputAdornment position="end">
+                        {props.endIcon}
+                    </InputAdornment>
+                ),
+                startAdornment: (
+                    <InputAdornment position="start">
+                        {props.startIcon}
+                    </InputAdornment>
+                ),
+            }}
+            variant="outlined"
+            margin="none"
+            required={props.required}
+            // fullWidth
+            id={props.id}
+            name={props.name}
+            autoComplete={props.autoComplete}
+            type={props.type}
+            helperText={props.helperText}
+            error={props.error}
+            placeholder={props.placeholder}
+            multiline={props.multiline}
+            rowsMax="20"
+            onChange={props.onChange}
+        />
+    );
+};
 
 export {InputDefault};
 export {InputAuth};
@@ -184,3 +276,5 @@ export {SelectDefault};
 export {OptionDefault};
 export {CheckboxDefault};
 export {RadioDefault};
+export {InputWithButton};
+export {InputWithIcon};
