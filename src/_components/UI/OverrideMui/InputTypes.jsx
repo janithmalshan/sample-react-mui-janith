@@ -9,6 +9,8 @@ import Checkbox from "@material-ui/core/Checkbox";
 import {CheckBoxIcon, CheckBoxOutlineBlankIcon} from "../Common/SvgIcons";
 import Radio from "@material-ui/core/Radio";
 import {ButtonDefault} from "./ButtonTypes";
+import InputAdornment from "@material-ui/core/InputAdornment";
+
 
 const useStyles = makeStyles({
     cssLabel: {
@@ -222,6 +224,52 @@ const InputWithButton = (props) => {
     );
 };
 
+const InputWithIcon = (props) => {
+    const classes = useStyles();
+    return (
+        <TextField
+            className={'ui-input-with-icon'}
+            InputLabelProps={{
+                classes: {
+                    root: classes.cssLabel,
+                    focused: classes.cssFocused,
+                },
+            }}
+            InputProps={{
+                classes: {
+                    root: classes.cssOutlinedInput,
+                    focused: classes.cssFocused,
+                    notchedOutline: classes.notchedOutline,
+                },
+                endAdornment: (
+                    <InputAdornment position="end">
+                        {props.endIcon}
+                    </InputAdornment>
+                ),
+                startAdornment: (
+                    <InputAdornment position="start">
+                        {props.startIcon}
+                    </InputAdornment>
+                ),
+            }}
+            variant="outlined"
+            margin="none"
+            required={props.required}
+            // fullWidth
+            id={props.id}
+            name={props.name}
+            autoComplete={props.autoComplete}
+            type={props.type}
+            helperText={props.helperText}
+            error={props.error}
+            placeholder={props.placeholder}
+            multiline={props.multiline}
+            rowsMax="20"
+            onChange={props.onChange}
+        />
+    );
+};
+
 export {InputDefault};
 export {InputAuth};
 export {SelectDefault};
@@ -229,3 +277,4 @@ export {OptionDefault};
 export {CheckboxDefault};
 export {RadioDefault};
 export {InputWithButton};
+export {InputWithIcon};
