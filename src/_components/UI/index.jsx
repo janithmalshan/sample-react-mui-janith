@@ -285,8 +285,9 @@ export default function SignInSide() {
                             <SelectDefault
                                 name="name"
                                 id="name"
+                                selectvalue=""
                             >
-                                <OptionDefault value="">
+                                <OptionDefault value={0}>
                                     <em>None</em>
                                 </OptionDefault>
                                 <OptionDefault value={10}>Ten</OptionDefault>
@@ -297,7 +298,7 @@ export default function SignInSide() {
                     </UiFieldMultipleWr>
                     <UiFieldSingleWr>
                         <UiField fieldtitle="Full width select">
-                            <SelectDefault>
+                            <SelectDefault  selectvalue="">
                                 <OptionDefault value="x">
                                     <em>None</em>
                                 </OptionDefault>
