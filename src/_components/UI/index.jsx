@@ -175,8 +175,12 @@ export default function SignInSide() {
                     </UiDialog>
                 </div>
                 <UiTitleWr>
-                    <h1 className="ui-title f-left">Detail View</h1>
-                    <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
+                    <h1 className="ui-title f-left ui-title-with-btn">
+                        Detail View
+                        <ButtonDefault className="title-button" variant="contained" color="primary">Ok</ButtonDefault>
+                        <ButtonDefault className="title-button" variant="outlined" color="primary">Modify</ButtonDefault>
+                    </h1>
+                    <ButtonDelete className="f-right ui-btn-sm">Delete </ButtonDelete>
                 </UiTitleWr>
                 <UiPaper>
                     <UiFieldSingleWr>
