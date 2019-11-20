@@ -241,11 +241,6 @@ const InputWithIcon = (props) => {
                     focused: classes.cssFocused,
                     notchedOutline: classes.notchedOutline,
                 },
-                endAdornment: (
-                    <InputAdornment position="end">
-                        {props.endIcon}
-                    </InputAdornment>
-                ),
                 startAdornment: (
                     <InputAdornment position="start">
                         {props.startIcon}
