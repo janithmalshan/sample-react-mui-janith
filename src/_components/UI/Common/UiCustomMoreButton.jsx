@@ -60,7 +60,7 @@ export default function UiMoreButton(props) {
 
     let items=[];
     for(let i=0;i<props.items.length;i++){
-        items.push(<StyledMenuItem><ListItemText primary={ props.items[i] }/></StyledMenuItem>);
+        items.push(<StyledMenuItem key={[i]}><ListItemText primary={ props.items[i] }/></StyledMenuItem>);
     }
 
     return (

@@ -2,7 +2,7 @@ import React from "react";
 import {UiNavBar} from "../Common/UiNavBar";
 import {UiFooter} from "../Common/UiFooter";
 import {UiNavMenuItem} from "../Common/UiNavMenuItem";
-import {BtnIconAdd, CheckBoxIcon, InstrumentIcon} from "../Common/SvgIcons";
+import {BtnIconAdd, CheckBoxIcon, InstrumentIcon,ButtonIconSearch} from "../Common/SvgIcons";
 import {UiActionWrTop, UiMainWrap, UiTitleWr} from "../Common/UiMainWrap";
 import {ButtonDefault, ButtonDelete, ButtonSelect} from "../OverrideMui/ButtonTypes";
 import UiTableGrid from "../Container/TableGrid";
@@ -29,7 +29,7 @@ export default function DataGrid() {
                         className="f-right"><BtnIconAdd className="ui-btn-icon"/>Add New</ButtonDefault>
                 </UiTitleWr>
                 <UiActionWrTop>
-                    <InputWithIcon startIcon={<CheckBoxIcon/>} placeholder="Search" className="ui-x f-left"/>
+                    <InputWithIcon startIcon={<ButtonIconSearch/>} placeholder="Search" className="ui-x f-left"/>
                     <ButtonSelect className="f-right ui-btn-sm">Select</ButtonSelect>
                     <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
                 </UiActionWrTop>

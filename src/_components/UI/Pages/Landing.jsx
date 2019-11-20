@@ -15,8 +15,10 @@ import {
     MenuIconTransactions,
     MenuIconUsers,
     MenuIconWorkflows,
-    MenuIconPlus
+    MenuIconPlus,
+    ArrowBack
 } from "../Common/SvgIcons";
+import IconArrowRight from "../../../../styles/img/ic_right-arrow-circular-button.svg"
 import {UiMainWrap, UiTitleWr} from "../Common/UiMainWrap";
 
 export default function Dashboard() {
@@ -24,6 +26,7 @@ export default function Dashboard() {
     return (
         <div>
             <UiNavBar username="Admin">
+                <h3 className="ui-main-nav__go-back"><img src={IconArrowRight}/>&nbsp;&nbsp;Back</h3>
                 {/*<h1>NAVIGATION</h1>*/}
                 <UiSubNavMenuItem
                     count="99,999"

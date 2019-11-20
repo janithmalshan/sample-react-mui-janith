@@ -175,8 +175,12 @@ export default function SignInSide() {
                     </UiDialog>
                 </div>
                 <UiTitleWr>
-                    <h1 className="ui-title f-left">Detail View</h1>
-                    <ButtonDelete className="f-right ui-btn-sm">Delete</ButtonDelete>
+                    <h1 className="ui-title f-left ui-title-with-btn">
+                        Detail View
+                        <ButtonDefault className="title-button" variant="contained" color="primary">Ok</ButtonDefault>
+                        <ButtonDefault className="title-button" variant="outlined" color="primary">Modify</ButtonDefault>
+                    </h1>
+                    <ButtonDelete className="f-right ui-btn-sm">Delete </ButtonDelete>
                 </UiTitleWr>
                 <UiPaper>
                     <UiFieldSingleWr>
@@ -285,8 +289,9 @@ export default function SignInSide() {
                             <SelectDefault
                                 name="name"
                                 id="name"
+                                selectvalue=""
                             >
-                                <OptionDefault value="">
+                                <OptionDefault value={0}>
                                     <em>None</em>
                                 </OptionDefault>
                                 <OptionDefault value={10}>Ten</OptionDefault>
@@ -297,7 +302,7 @@ export default function SignInSide() {
                     </UiFieldMultipleWr>
                     <UiFieldSingleWr>
                         <UiField fieldtitle="Full width select">
-                            <SelectDefault>
+                            <SelectDefault  selectvalue="">
                                 <OptionDefault value="x">
                                     <em>None</em>
                                 </OptionDefault>
