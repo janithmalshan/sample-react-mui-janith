@@ -46,6 +46,7 @@ import {UiTreeItem, UiTreeView} from "./Common/UiTreeView";
 import IconTreePackage from "../../../styles/img/ic_tree_package.svg"
 import IconTreeModule from "../../../styles/img/ic_tree_module.svg"
 import IconTreeLayout from "../../../styles/img/ic_tree_layout.svg"
+import Link from "@material-ui/core/Link";
 
 export default function SignInSide() {
 
@@ -83,18 +84,18 @@ export default function SignInSide() {
 
     return (
         <Grid component="main">
-            <SignInLeft/>
+            {/*<SignInLeft/>*/}
             <UiMainWrap>
 
                 <div className="block ui-action-wr">
-                    <ButtonDelete><a href={"/login"}>login</a></ButtonDelete>
-                    <ButtonDelete><a href={"/register"}>register</a></ButtonDelete>
-                    <ButtonDelete><a href={"/dashboard"}>dashboard</a></ButtonDelete>
-                    <ButtonDelete><a href={"/datagrid"}>datagrid</a></ButtonDelete>
-                    <ButtonDelete><a href={"/detail"}>detail view</a></ButtonDelete>
-                    <ButtonDelete><a href={"/modify"}>modify view</a></ButtonDelete>
-                    <ButtonDelete><a href={"/forgot"}>forgot password</a></ButtonDelete>
-                    <ButtonDelete><a href={"/newpw"}>new password</a></ButtonDelete>
+                    <ButtonSelect href={"/login"}>login</ButtonSelect>
+                    <ButtonSelect href={"/register"}>register</ButtonSelect>
+                    <ButtonSelect href={"/dashboard"}>dashboard</ButtonSelect>
+                    <ButtonSelect href={"/datagrid"}>datagrid</ButtonSelect>
+                    <ButtonSelect href={"/detail"}>detail view</ButtonSelect>
+                    <ButtonSelect href={"/modify"}>modify view</ButtonSelect>
+                    <ButtonSelect href={"/forgot"}>forgot password</ButtonSelect>
+                    <ButtonSelect href={"/newpw"}>new password</ButtonSelect>
                 </div>
 
                 <div className="block ui-action-wr">
@@ -116,7 +117,7 @@ export default function SignInSide() {
                         color="primary"
                         className="ui-img-btn"><BtnIconAdd className="ui-btn-icon"/>Add New</ButtonDefault>
                     <ButtonDelete>Delete</ButtonDelete>
-                    <ButtonSelect>Delete</ButtonSelect>
+                    <ButtonSelect>Select</ButtonSelect>
                 </div>
 
                 <div className="block ui-svg-set">
@@ -372,7 +373,7 @@ export default function SignInSide() {
                     // className={classes.margin}
                     message="This is an error message!"
                 />
-                <UiAlertContentWrapper
+                {/*<UiAlertContentWrapper
                     variant="warning"
                     // className={classes.margin}
                     message="This is a warning message!"
@@ -386,7 +387,7 @@ export default function SignInSide() {
                     variant="success"
                     // className={classes.margin}
                     message="This is a success message!"
-                />
+                />*/}
             </div>
         </Grid>
     );

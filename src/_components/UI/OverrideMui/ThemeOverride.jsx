@@ -244,9 +244,9 @@ const ThemeDefault = createMuiTheme({
                 opacity: 1,
                 color: variables.primaryTextColor,
             },
-            labelContainer: {
+            /*labelContainer: {
                 padding: 0,
-            }
+            }*/
         },
         MuiTreeView: {
             root: {
