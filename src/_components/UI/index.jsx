@@ -47,6 +47,7 @@ import IconTreePackage from "../../../styles/img/ic_tree_package.svg"
 import IconTreeModule from "../../../styles/img/ic_tree_module.svg"
 import IconTreeLayout from "../../../styles/img/ic_tree_layout.svg"
 import Link from "@material-ui/core/Link";
+import FilterInput from "./Common/Test";
 
 export default function SignInSide() {
 
@@ -96,6 +97,7 @@ export default function SignInSide() {
                     <ButtonSelect href={"/modify"}>modify view</ButtonSelect>
                     <ButtonSelect href={"/forgot"}>forgot password</ButtonSelect>
                     <ButtonSelect href={"/newpw"}>new password</ButtonSelect>
+                    {/*<FilterInput/>*/}
                 </div>
 
                 <div className="block ui-action-wr">

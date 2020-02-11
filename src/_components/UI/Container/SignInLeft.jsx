@@ -12,9 +12,9 @@ const useStyles = makeStyles(theme => ({
     },
     txtTitle: {
         fontSize: '30px',
-        fontWeight: 600,
+        fontWeight:500,
         color: '#FFFFFF',
-        margin: '75px auto 0 auto'
+        margin: '55px auto 0 auto'
     },
     txtDesc: {
         fontSize: '22px',
@@ -37,9 +37,9 @@ export default function SignInLeft() {
             justify="center"
             style={{ backgroundColor: ThemeDefault.palette.primary.main }}>
             <Grid className="ui-auth-main-left">
-                <img src="../../../../styles/img/app_logo_light.svg" className={classes.image}/>
-                <p className={classes.txtTitle}>Welcome Back</p>
-                <p className={classes.txtDesc}>The place to get your things done withour a delay.</p>
+                <img src="../../../../styles/img/app_logo_login.svg" className={classes.image}/>
+                <p className={classes.txtTitle}>Bringing Life into FinTech</p>
+                <p className={classes.txtDesc}></p>
             </Grid>
         </Grid >
     );
