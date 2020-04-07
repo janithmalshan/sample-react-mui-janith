@@ -6,7 +6,7 @@ import {InputAuth} from "../../UI/OverrideMui/InputTypes";
 import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import {ButtonAuth} from "../../UI/OverrideMui/ButtonTypes";
+import {ButtonAuth, ButtonSelect} from "../../UI/OverrideMui/ButtonTypes";
 import Link from "@material-ui/core/Link";
 import {UiAlertContentWrapper} from "../Common/UiAlert";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -59,10 +59,6 @@ export default function SignInLeft() {
                         error={false}
                         // helperText="Invalid password"
                     />
-                    {/*<FormControlLabel
-                    control={<Checkbox value="remember" color="primary"/>}
-                    label="Remember me"
-                />*/}
                     <a href="#" className="pw-reset f-right">
                         Having trouble logging in?
                     </a>
@@ -71,6 +67,7 @@ export default function SignInLeft() {
                         fullWidth
                         variant="contained"
                         color="primary"
+                        href={"/ui"}
                     >
                         <span className="t-bold">Login</span>
                     </ButtonAuth>
@@ -82,6 +79,7 @@ export default function SignInLeft() {
                         fullWidth
                         variant="outlined"
                         color="primary"
+                        href={"/ui"}
                     >
                         New to Admin? <span className="t-bold">&nbsp; Sign Up Here</span>
                     </ButtonAuth>

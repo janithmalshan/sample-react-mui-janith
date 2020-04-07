@@ -35,24 +35,6 @@ export default function Forgot() {
                                 autoComplete=""
                             />
 
-                            <div>
-                                <p className="pw-reset-criteria"><b>Your password must contain :</b></p>
-                                <ul className="pw-reset-criteria-ul">
-                                    <li>
-                                        <p className="pw-reset-criteria">At least</p>
-                                    </li>
-                                    <li>
-                                        <p className="pw-reset-criteria">At least</p>
-                                    </li>
-                                    <li>
-                                        <p className="pw-reset-criteria">At least</p>
-                                    </li>
-                                    <li>
-                                        <p className="pw-reset-criteria">At least</p>
-                                    </li>
-                                </ul>
-                            </div>
-
                             <div className="margin-ex-d"/>
 
                             <ButtonAuth

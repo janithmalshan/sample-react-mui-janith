@@ -13,7 +13,7 @@ import ChooseNew from './_components/UI/Pages/ChooseNewPassword';
 import {history} from './_helpers';
 import {alertActions} from './_actions';
 import {PrivateRoute} from './_components';
-import {HomePage, PackageModulesLink, RegisterPage} from './_containers';
+import {HomePage, PackageModulesLink} from './_containers';
 
 import {ThemeProvider} from '@material-ui/styles';
 import {ThemeDefault, ThemeDefaultAuth} from './_components/UI/OverrideMui/ThemeOverride';
@@ -51,7 +51,6 @@ class App extends React.Component {
                         <ThemeProvider theme={ThemeDefaultAuth}>
                             {/*Pages before the login should be inside here*/}
                             <Route path="/login" component={SignInSide}/>
-                            <Route path="/register" component={RegisterPage}/>
                             <Route path="/forgot" component={Forgot}/>
                             <Route path="/newpw" component={ChooseNew}/>
                         </ThemeProvider>

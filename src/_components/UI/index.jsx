@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import SignInLeft from "./Container/SignInLeft";
 import {UiAlertContentWrapper} from "./Common/UiAlert";
 import {ButtonAuth, ButtonDefault, ButtonDelete, ButtonSelect} from "./OverrideMui/ButtonTypes";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -46,8 +45,6 @@ import {UiTreeItem, UiTreeView} from "./Common/UiTreeView";
 import IconTreePackage from "../../../styles/img/ic_tree_package.svg"
 import IconTreeModule from "../../../styles/img/ic_tree_module.svg"
 import IconTreeLayout from "../../../styles/img/ic_tree_layout.svg"
-import Link from "@material-ui/core/Link";
-import FilterInput from "./Common/Test";
 
 export default function SignInSide() {
 
@@ -89,9 +86,9 @@ export default function SignInSide() {
             <UiMainWrap>
 
                 <div className="block ui-action-wr">
+                    <h2>Main pages/ components</h2>
                     <ButtonSelect href={"/login"}>login</ButtonSelect>
-                    <ButtonSelect href={"/register"}>register</ButtonSelect>
-                    <ButtonSelect href={"/dashboard"}>dashboard</ButtonSelect>
+                    {/*<ButtonSelect href={"/dashboard"}>dashboard</ButtonSelect>*/}
                     <ButtonSelect href={"/datagrid"}>datagrid</ButtonSelect>
                     <ButtonSelect href={"/detail"}>detail view</ButtonSelect>
                     <ButtonSelect href={"/modify"}>modify view</ButtonSelect>
@@ -108,6 +105,7 @@ export default function SignInSide() {
                     <ButtonAuth
                         variant="outlined"
                         color="primary">Authenticate Primary Stroked</ButtonAuth>
+                    <br/>
                     <ButtonDefault
                         variant="contained"
                         color="primary">Default Primary</ButtonDefault>
@@ -124,11 +122,8 @@ export default function SignInSide() {
 
                 <div className="block ui-svg-set">
                     <h2>Svg Icons</h2>
-                    <MenuIconOpen/><MenuIconClose/><IconLock/>
-                    <CheckBoxOutlineBlankIcon/><CheckBoxIcon/><InstrumentIcon/>
                     <MenuIconStore/><MenuIconLoyalty/><MenuIconDeals/><MenuIconNotifications/><MenuIconCustomers/><MenuIconReports/>
                     <MenuIconTransactions/><MenuIconConfigs/><MenuIconWorkflows/><MenuIconUsers/><MenuIconMerchants/>
-                    <InstrumentIcon/>
                 </div>
 
                 <div className="block ui-action-wr">
@@ -177,13 +172,13 @@ export default function SignInSide() {
                         </UiFieldMultipleWr>
                     </UiDialog>
                 </div>
+                <h2>Common Detail/ Modify view</h2>
                 <UiTitleWr>
                     <h1 className="ui-title f-left ui-title-with-btn">
                         Detail View
                         <ButtonDefault className="title-button" variant="contained" color="primary">Ok</ButtonDefault>
                         <ButtonDefault className="title-button" variant="outlined" color="primary">Modify</ButtonDefault>
                     </h1>
-                    <ButtonDelete className="f-right ui-btn-sm">Delete </ButtonDelete>
                 </UiTitleWr>
                 <UiPaper>
                     <UiFieldSingleWr>
@@ -343,54 +338,38 @@ export default function SignInSide() {
                         </UiTreeItem>
                     </UiTreeItem>
                 </UiTreeView>
+                <div className="block ui-action-wr">
+
+                    <ButtonAuth
+                        fullWidth
+                        variant="contained"
+                        color="primary"
+                        onClick={handleClick}
+                    >
+                        open alert
+                    </ButtonAuth>
+                    <Snackbar
+                        anchorOrigin={{
+                            vertical: 'top',
+                            horizontal: 'center',
+                        }}
+                        open={open}
+                        autoHideDuration={6000}
+                        onClose={handleClose}
+                    >
+                        <UiAlertContentWrapper
+                            onClose={handleClose}
+                            variant="success"
+                            message="This is a success message!"
+                        />
+                    </Snackbar>
+                    <UiAlertContentWrapper
+                        variant="error"
+                        // className={classes.margin}
+                        message="This is an error message!"
+                    />
+                </div>
             </UiMainWrap>
-
-            <ButtonAuth
-                fullWidth
-                variant="contained"
-                color="primary"
-                onClick={handleClick}
-            >
-                open alert
-            </ButtonAuth>
-            <Snackbar
-                anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center',
-                }}
-                open={open}
-                autoHideDuration={6000}
-                onClose={handleClose}
-            >
-                <UiAlertContentWrapper
-                    onClose={handleClose}
-                    variant="success"
-                    message="This is a success message!"
-                />
-            </Snackbar>
-
-            <div>
-                <UiAlertContentWrapper
-                    variant="error"
-                    // className={classes.margin}
-                    message="This is an error message!"
-                />
-                {/*<UiAlertContentWrapper
-                    variant="warning"
-                    // className={classes.margin}
-                    message="This is a warning message!"
-                />
-                <UiAlertContentWrapper
-                    variant="info"
-                    // className={classes.margin}
-                    message="This is an information message!"
-                />
-                <UiAlertContentWrapper
-                    variant="success"
-                    // className={classes.margin}
-                    message="This is a success message!"
-                />*/}
-            </div>
         </Grid>
     );
 }

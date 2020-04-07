@@ -16,7 +16,7 @@ export default function Forgot() {
                   className="overflow">
                 <Fragment>
 
-                    <Grid className="ui-auth-main-right">
+                    {/*<Grid className="ui-auth-main-right">
                         <h1 className="header-txt t-center">
                             Forgot Your Password?
                         </h1>
@@ -49,7 +49,7 @@ export default function Forgot() {
                             </ButtonAuth>
 
                         </form>
-                    </Grid>
+                    </Grid>*/}
                     <MsgEmailSent/>
                 </Fragment>
             </Grid>
